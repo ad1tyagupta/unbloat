@@ -50,7 +50,7 @@ def disabled_packages(adb: Adb) -> set:
 
 def _component_pkg(text: str) -> Optional[str]:
     text = text.strip()
-    if not text or text == "null":
+    if not text or text == "null" or " " in text:
         return None
     pkg = text.split("/", 1)[0].strip()
     return pkg if re.match(r"^[A-Za-z0-9_.]+$", pkg) and "." in pkg else None
@@ -106,6 +106,33 @@ def parse_device_admins(text: str) -> List[str]:
     return out
 
 
+def parse_dumpsys_role(text: str, role: str) -> List[str]:
+    """Holders of one role from `dumpsys role` (Android 10, which has roles
+    but no `cmd role get-role-holders`)."""
+    m = re.search(r"name=%s\s*\n\s*holders=([^\n]*)" % re.escape(role), text)
+    return parse_role_holders(m.group(1)) if m else []
+
+
+def _role(adb: Adb, role: str, dump: List[str]) -> List[str]:
+    holders = parse_role_holders_strict(adb.shell_text(["cmd", "role", "get-role-holders", role]))
+    if holders:
+        return holders
+    if not dump:
+        dump.append(adb.shell_text(["dumpsys", "role"], timeout=60))
+    return parse_dumpsys_role(dump[0], role)
+
+
+def parse_role_holders_strict(text: str) -> List[str]:
+    """Like parse_role_holders, but ignores error text such as
+    'Unknown command: get-role-holders'."""
+    lines = [l.strip() for l in text.strip().splitlines() if l.strip()]
+    if len(lines) != 1:
+        return []
+    if any(word in lines[0].lower() for word in ("unknown", "can't", "error", "exception", "usage")):
+        return []
+    return parse_role_holders(lines[0])
+
+
 def _setting(adb: Adb, namespace: str, key: str) -> str:
     return adb.shell_text(["settings", "get", namespace, key]).strip()
 
@@ -115,15 +142,19 @@ def read_defaults(adb: Adb) -> Dict[str, object]:
     home = ["-a", "android.intent.action.MAIN", "-c", "android.intent.category.HOME"]
     launcher = parse_resolve_activity(adb.shell_text(["cmd", "package", "resolve-activity", "--brief"] + home))
     launchers = parse_query_activities(adb.shell_text(["cmd", "package", "query-activities", "--brief"] + home))
+    dump: List[str] = []
     if launcher is None:
-        holders = parse_role_holders(adb.shell_text(["cmd", "role", "get-role-holders", "android.app.role.HOME"]))
+        holders = _role(adb, "android.app.role.HOME", dump)
         launcher = holders[0] if holders else None
     keyboard = _component_pkg(_setting(adb, "secure", "default_input_method"))
-    dialers = parse_role_holders(adb.shell_text(["cmd", "role", "get-role-holders", "android.app.role.DIALER"]))
+    dialers = _role(adb, "android.app.role.DIALER", dump)
     if not dialers:
         d = _component_pkg(_setting(adb, "secure", "dialer_default_application"))
+        if not d:
+            lines = adb.shell_text(["telecom", "get-default-dialer"]).strip().splitlines()
+            d = _component_pkg(lines[-1]) if lines else None
         dialers = [d] if d else []
-    sms = parse_role_holders(adb.shell_text(["cmd", "role", "get-role-holders", "android.app.role.SMS"]))
+    sms = _role(adb, "android.app.role.SMS", dump)
     if not sms:
         s = _component_pkg(_setting(adb, "secure", "sms_default_application"))
         sms = [s] if s else []

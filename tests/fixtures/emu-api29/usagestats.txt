@@ -1,0 +1,150 @@
+user=0 
+  Last 24 hour events (timeRange="11/16/2026, 11:54 AM – 11/17/2026, 11:54 AM" )
+    time="2026-11-17 11:44:35" type=CONFIGURATION_CHANGE package=android config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 flags=0x0 
+    time="2026-11-17 11:44:35" type=CONFIGURATION_CHANGE package=android config=notnight-v29 flags=0x0 
+    time="2026-11-17 11:44:36" type=SCREEN_INTERACTIVE package=android flags=0x0 
+    time="2026-11-17 11:44:36" type=ACTIVITY_RESUMED package=com.android.settings class=com.android.settings.FallbackHome instanceId=18246564 taskRootPackage=com.android.settings taskRootClass=com.android.settings.FallbackHome flags=0x0 
+    time="2026-11-17 11:44:37" type=NOTIFICATION_INTERRUPTION package=android channelId=USB flags=0x0 
+    time="2026-11-17 11:44:38" type=NOTIFICATION_INTERRUPTION package=com.android.systemui channelId=DSK flags=0x0 
+    time="2026-11-17 11:44:38" type=CONFIGURATION_CHANGE package=android config=mcc310-mnc260-v29 flags=0x0 
+    time="2026-11-17 11:44:40" type=NOTIFICATION_INTERRUPTION package=android channelId=DEVELOPER flags=0x0 
+    time="2026-11-17 11:44:41" type=ACTIVITY_PAUSED package=com.android.settings class=com.android.settings.FallbackHome instanceId=18246564 taskRootPackage=com.android.settings taskRootClass=com.android.settings.FallbackHome flags=0x0 
+    time="2026-11-17 11:44:41" type=ACTIVITY_RESUMED package=com.android.launcher3 class=com.android.launcher3.Launcher instanceId=58355973 taskRootPackage=com.android.launcher3 taskRootClass=com.android.launcher3.Launcher flags=0x0 
+    time="2026-11-17 11:44:42" type=ACTIVITY_STOPPED package=com.android.settings class=com.android.settings.FallbackHome instanceId=18246564 taskRootPackage=com.android.settings taskRootClass=com.android.settings.FallbackHome flags=0x0 
+  In-memory daily stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.media totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.downloads totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.networkstack totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=android totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.launcher3 totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:41" totalTimeVisible="00:00" lastTimeVisible="2026-11-17 11:44:41" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.printspooler totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.se totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.keychain totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.dialer totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android.ext.services totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.localtransport totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.smspush totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims.presence totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.settings totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:36" totalTimeVisible="00:01" lastTimeVisible="2026-11-17 11:44:42" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.phone totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.blockednumber totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.contacts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.networkstack 
+      package=android 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.se 
+      package=com.android.keychain 
+      package=com.android.service.ims 
+      package=com.android.dialer 
+      package=android.ext.services 
+      package=com.android.localtransport 
+      package=com.android.smspush 
+      package=com.android.service.ims.presence 
+      package=com.android.settings 
+      package=com.android.phone 
+      package=com.android.providers.blockednumber 
+      package=com.android.systemui 
+      package=com.android.providers.contacts 
+    configurations
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:00" lastTime="2026-11-17 11:44:38" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:02" lastTime="2026-11-17 11:44:38" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:00" lastTime="2026-11-17 11:44:35" count=1 
+    event aggregations
+      screen-interactive: 1x for "00:00"
+  In-memory weekly stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.media totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.downloads totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.networkstack totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=android totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.launcher3 totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:41" totalTimeVisible="00:00" lastTimeVisible="2026-11-17 11:44:41" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.printspooler totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.se totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.keychain totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.dialer totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android.ext.services totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.localtransport totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.smspush totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims.presence totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.settings totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:36" totalTimeVisible="00:01" lastTimeVisible="2026-11-17 11:44:42" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.phone totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.blockednumber totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.contacts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.networkstack 
+      package=android 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.se 
+      package=com.android.keychain 
+      package=com.android.service.ims 
+      package=com.android.dialer 
+      package=android.ext.services 
+      package=com.android.localtransport 
+      package=com.android.smspush 
+      package=com.android.service.ims.presence 
+      package=com.android.settings 
+      package=com.android.phone 
+      package=com.android.providers.blockednumber 
+      package=com.android.systemui 
+      package=com.android.providers.contacts 
+    configurations
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:00" lastTime="2026-11-17 11:44:38" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:02" lastTime="2026-11-17 11:44:38" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-nowidecg-lowdr-port-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v29 totalTime="00:00" lastTime="2026-11-17 11:44:35" count=1 
+    event aggregations
+      screen-interactive: 1x for "00:00"
+  In-memory monthly stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.media totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.downloads totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.networkstack totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=android totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.launcher3 totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:41" totalTimeVisible="00:00" lastTimeVisible="2026-11-17 11:44:41" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.printspooler totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.se totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.keychain totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.dialer totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android.ext.services totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.localtransport totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.smspush totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.service.ims.presence totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.settings totalTimeUsed="00:00" lastTimeUsed="2026-11-17 11:44:36" totalTimeVisible="00:01" lastTimeVisible="2026-11-17 11:44:42" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=1 
+      package=com.android.phone totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.blockednumber totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui totalTimeUsed="00:00" lastTimeUsed="1975-01-05 15:57:07" totalTimeVisible="00:00" lastTimeVisible="1975-01-05 15:57:07" totalTimeFS="00:00" lastTimeFS="1975-01-05 15:57:07" appLaunchCount=0 
+      package=com.android.providers.contacts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.networkstack 
+      package=android 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.se 
+      package=com.android.keychain 
+      package=com.android.service.ims 

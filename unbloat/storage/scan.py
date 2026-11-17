@@ -160,7 +160,9 @@ def scan_storage(
         entries = [l for l in res.text.splitlines() if l.strip()]
         inside = sum(1 for r in files if analyze.rel(str(r["path"])).casefold().startswith("android/data/"))
         android_data = {"visible": bool(inside), "entries": len(entries), "files_seen": inside}
-    if not android_data["visible"]:
+    if res.code != 0 and "No such file" in res.err:
+        android_data["exists"] = False
+    elif not android_data["visible"]:
         notes.append(
             "Files inside Android/data (apps' own folders) cannot be inspected from here on this phone. "
             "Their size still shows up in each app's 'data' number."
@@ -175,6 +177,8 @@ def scan_storage(
     if sizes is None:
         notes.append("This phone did not report per-app sizes. App sizes are unknown.")
     else:
+        if any(v["data"] is None for v in sizes.values()):
+            notes.append("This Android version reports each app's own size and cache but not its saved data.")
         for pkg, s in sizes.items():
             last = usage.get(pkg, None) if usage else None
             days: Optional[int] = None
@@ -190,7 +194,7 @@ def scan_storage(
                     "app": s["app"],
                     "data": s["data"],
                     "cache": s["cache"],
-                    "total": s["app"] + s["data"],
+                    "total": s["app"] + (s["data"] or 0) + (s["cache"] if s["data"] is None else 0),
                     "user_installed": pkg in third_party,
                     "days_since_opened": days,
                     "not_opened_in_remembered_history": never,

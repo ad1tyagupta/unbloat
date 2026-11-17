@@ -1,0 +1,150 @@
+user=0 
+  In-memory daily stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.calendar totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.media totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.downloads totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.launcher3 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.printspooler totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.keychain totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.dialer totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=android.ext.services totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.settings totalTime="00:02" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.phone totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.blockednumber totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.userdictionary totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.systemui totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.contacts totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.calendar 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.keychain 
+      package=com.android.dialer 
+      package=android.ext.services 
+      package=com.android.settings 
+      package=com.android.phone 
+      package=com.android.providers.blockednumber 
+      package=com.android.providers.userdictionary 
+      package=com.android.systemui 
+      package=com.android.providers.contacts 
+    configurations
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:01" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h731dp-normal-long-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+    events
+      time="11/17/2026, 11:44 AM" type=CONFIGURATION_CHANGE package=android config=en-rUS-ldltr-sw411dp-w411dp-h731dp-normal-long-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 flags=0x0 
+      time="11/17/2026, 11:44 AM" type=CONFIGURATION_CHANGE package=android config=h659dp-notlong-v26 flags=0x0 
+      time="11/17/2026, 11:44 AM" type=CONFIGURATION_CHANGE package=android config=notnight-v26 flags=0x0 
+      time="11/17/2026, 11:44 AM" type=CONFIGURATION_CHANGE package=android config=finger-v26 flags=0x0 
+      time="11/17/2026, 11:44 AM" type=MOVE_TO_FOREGROUND package=com.android.settings class=com.android.settings.FallbackHome flags=0x0 
+      time="11/17/2026, 11:44 AM" type=CONFIGURATION_CHANGE package=android config=mcc310-mnc260-v26 flags=0x0 
+      time="11/17/2026, 11:44 AM" type=MOVE_TO_BACKGROUND package=com.android.settings class=com.android.settings.FallbackHome flags=0x0 
+      time="11/17/2026, 11:44 AM" type=MOVE_TO_FOREGROUND package=com.android.launcher3 class=com.android.launcher3.Launcher flags=0x0 
+  In-memory weekly stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.calendar totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.media totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.downloads totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.launcher3 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.printspooler totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.keychain totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.dialer totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=android.ext.services totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.settings totalTime="00:02" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.phone totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.blockednumber totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.userdictionary totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.systemui totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.contacts totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.calendar 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.keychain 
+      package=com.android.dialer 
+      package=android.ext.services 
+      package=com.android.settings 
+      package=com.android.phone 
+      package=com.android.providers.blockednumber 
+      package=com.android.providers.userdictionary 
+      package=com.android.systemui 
+      package=com.android.providers.contacts 
+    configurations
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:01" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h731dp-normal-long-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+    events
+  In-memory monthly stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.calendar totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.media totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.downloads totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.launcher3 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.printspooler totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.keychain totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.dialer totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=android.ext.services totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.settings totalTime="00:02" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.phone totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.blockednumber totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.userdictionary totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.systemui totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.contacts totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+    
+    ChooserCounts
+      package=com.android.providers.telephony 
+      package=com.android.providers.calendar 
+      package=com.android.providers.media 
+      package=com.android.providers.downloads 
+      package=com.android.launcher3 
+      package=com.android.printspooler 
+      package=com.android.keychain 
+      package=com.android.dialer 
+      package=android.ext.services 
+      package=com.android.settings 
+      package=com.android.phone 
+      package=com.android.providers.blockednumber 
+      package=com.android.providers.userdictionary 
+      package=com.android.systemui 
+      package=com.android.providers.contacts 
+    configurations
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:01" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h659dp-normal-notlong-notround-lowdr-nowidecg-port-notnight-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h731dp-normal-long-notround-lowdr-nowidecg-port-420dpi-notouch-keysexposed-nokeys-navhidden-nonav-v26 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" count=1 
+    events
+  In-memory yearly stats
+  timeRange="11/17/2026, 11:44 – 11:53 AM" 
+    packages
+      package=com.android.providers.telephony totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.calendar totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.media totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.providers.downloads totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.launcher3 totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.printspooler totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.keychain totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.dialer totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=android.ext.services totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 
+      package=com.android.settings totalTime="00:02" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.phone totalTime="00:00" lastTime="11/17/2026, 11:44 AM" 
+      package=com.android.providers.blockednumber totalTime="00:00" lastTime="1/1/1970, 5:30 AM" 

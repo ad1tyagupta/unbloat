@@ -1,0 +1,20 @@
+Current Device Policy Manager state:
+
+  Enabled Device Admins (User 0, provisioningState: 0):
+ 
+    mPasswordOwner=-1
+
+  Constants:
+    DAS_DIED_SERVICE_RECONNECT_BACKOFF_SEC: 3600
+    DAS_DIED_SERVICE_RECONNECT_BACKOFF_INCREASE: 2.0
+    DAS_DIED_SERVICE_RECONNECT_MAX_BACKOFF_SEC: 86400
+    DAS_DIED_SERVICE_STABLE_CONNECTION_THRESHOLD_SEC: 120
+
+  Stats:
+    LockGuard.guard(): count=100, total=0.9ms, avg=0.009ms, max calls/s=34 max dur/s=0.6ms max time=0.6ms
+
+  Encryption Status: unsupported
+
+Device policy cache
+  Screen capture disabled: {0=false}
+  Password quality: {0=0}

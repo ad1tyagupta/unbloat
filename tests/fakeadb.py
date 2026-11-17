@@ -69,6 +69,7 @@ class FakeDevice:
             "android.app.role.SMS": "com.google.android.apps.messaging",
             "android.app.role.HOME": "com.google.android.apps.nexuslauncher",
         }
+        self.role_cmd = "ok"
         self.systemui_pid = "888"
         self.break_on_disable: set = set()
         self.refuse_disable: set = set()
@@ -188,6 +189,8 @@ class FakeDevice:
             return (self.systemui_pid + "\n") if self.systemui_pid else "", "", 0 if self.systemui_pid else 1
         if c == "settings":
             return self.settings.get((a[2], a[3]), "null") + "\n", "", 0
+        if c == "telecom":
+            return self.outputs.get("telecom", "") , "", 0
         if c == "dumpsys":
             return self.outputs.get(a[1], ""), "", 0
         if c == "pm":
@@ -312,6 +315,10 @@ class FakeDevice:
                 return "No activities found\n", "", 0
             return "1 activities found:\n  Activity #0:\n    priority=0\n    %s\n" % self.launcher, "", 0
         if a[1] == "role":
+            if self.role_cmd == "unknown":
+                return "Unknown command: get-role-holders\n", "", 255
+            if self.role_cmd == "missing":
+                return "", "cmd: Can't find service: role\n", 255
             return self.roles.get(a[-1], "") + "\n", "", 0
         if a[1] == "jobscheduler":
             return "Running job [FORCED]\n", "", 0

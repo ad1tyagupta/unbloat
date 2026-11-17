@@ -69,7 +69,7 @@ def _json_list(text: str, label: str) -> Optional[list]:
     return value if isinstance(value, list) else None
 
 
-def parse_diskstats(text: str) -> Optional[Dict[str, Dict[str, int]]]:
+def parse_diskstats(text: str) -> Optional[Dict[str, Dict[str, Optional[int]]]]:
     """Per-app sizes from `dumpsys diskstats`: package -> app/data/cache bytes.
 
     Returns None when the phone has not computed them (it does so about once
@@ -77,18 +77,20 @@ def parse_diskstats(text: str) -> Optional[Dict[str, Dict[str, int]]]:
     """
     names = _json_list(text, "Package Names")
     app = _json_list(text, "App Sizes")
-    data = _json_list(text, "App Data Sizes")
+    data = _json_list(text, "App Data Sizes")  # absent on Android 8
     cache = _json_list(text, "Cache Sizes")
-    if not names or app is None or data is None or cache is None:
+    if not names or app is None or cache is None:
         return None
-    if not (len(names) == len(app) == len(data) == len(cache)):
+    if data is None and re.search(r"^App Data Sizes:", text, re.M):
+        return None  # the line is there but unreadable
+    if not (len(names) == len(app) == len(cache)) or (data is not None and len(data) != len(names)):
         return None
-    out: Dict[str, Dict[str, int]] = {}
-    for n, a, d, c in zip(names, app, data, cache):
+    out: Dict[str, Dict[str, Optional[int]]] = {}
+    for i, n in enumerate(names):
         if not isinstance(n, str):
             return None
         try:
-            out[n] = {"app": int(a), "data": int(d), "cache": int(c)}
+            out[n] = {"app": int(app[i]), "data": int(data[i]) if data is not None else None, "cache": int(cache[i])}
         except (TypeError, ValueError):
             return None
     return out

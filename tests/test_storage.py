@@ -27,6 +27,26 @@ class Parsers(unittest.TestCase):
         self.assertIsNone(parse_diskstats('Package Names: ["a"]\nApp Sizes: ["x"]\nApp Data Sizes: [1]\nCache Sizes: [1]\n'))
         self.assertIsNone(parse_diskstats('Package Names: {"a":1}\nApp Sizes: [1]\nApp Data Sizes: [1]\nCache Sizes: [1]\n'))
 
+    def test_older_android_fixtures(self):
+        a8 = parse_diskstats(fixture("emu-api26", "diskstats.txt"))
+        self.assertIsNone(a8["com.android.providers.telephony"]["data"])  # Android 8 has no data sizes
+        self.assertGreater(a8["com.android.providers.telephony"]["app"], 0)
+        a10 = parse_diskstats(fixture("emu-api29", "diskstats.txt"))
+        self.assertIsInstance(next(iter(a10.values()))["data"], int)
+        u8 = parse_usagestats(fixture("emu-api26", "usagestats.txt"))  # 'lastTime="1/1/1970, 5:30 AM"' style
+        self.assertEqual(u8["com.android.providers.calendar"], 0.0)
+        self.assertGreater(u8["com.android.providers.telephony"], 1.7e9)
+        self.assertTrue(parse_usagestats(fixture("emu-api29", "usagestats.txt")))
+        for v in ("26", "29"):
+            self.assertEqual(parse_df(fixture("emu-api" + v, "df.txt"))["total"], 10190136 * 1024)
+        from unbloat.packages.state import parse_device_admins, parse_dumpsys_role
+        role = fixture("emu-api29", "role.txt")
+        self.assertEqual(parse_dumpsys_role(role, "android.app.role.SMS"), ["com.android.messaging"])
+        self.assertEqual(parse_dumpsys_role(role, "android.app.role.CALL_SCREENING"), [])
+        self.assertEqual(parse_dumpsys_role(fixture("emu-api26", "role.txt"), "android.app.role.SMS"), [])
+        for v in ("26", "29", "34"):
+            self.assertEqual(parse_device_admins(fixture("emu-api" + v, "device_policy.txt")), [])
+
     def test_usagestats_real(self):
         usage = parse_usagestats(fixture("emu-api34", "usagestats.txt"))
         self.assertGreater(len(usage), 50)

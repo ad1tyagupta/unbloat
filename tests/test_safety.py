@@ -414,3 +414,32 @@ class Storage(Base):
 
 if __name__ == "__main__":
     unittest.main()
+
+
+class OlderAndroidDefaults(Base):
+    def test_android10_roles_come_from_dumpsys(self):
+        self.dev.role_cmd = "unknown"
+        self.dev.outputs["role"] = (
+            "ROLE MANAGER STATE (dumpsys role):\n{\n  user_states={\n    roles=[\n      {\n        name=android.app.role.CALL_SCREENING\n      }\n"
+            "      {\n        name=android.app.role.SMS\n        holders=com.cool.sms\n      }\n"
+            "      {\n        name=android.app.role.DIALER\n        holders=com.cool.dialer\n      }\n    ]\n  }\n}\n"
+        )
+        for p in ("com.cool.sms", "com.cool.dialer"):
+            self.dev.add_package(p, system=False)
+            self.refused(self.pkgs(p, user_named=[p]), "cannot be switched off because")
+
+    def test_android8_settings_and_telecom(self):
+        self.dev.role_cmd = "missing"
+        self.dev.settings[("secure", "sms_default_application")] = "com.cool.sms"
+        self.dev.outputs["telecom"] = "com.cool.dialer\n"
+        from unbloat.packages.state import read_defaults
+        d = read_defaults(self.adb)
+        self.assertEqual((d["dialer"], d["sms"]), (["com.cool.dialer"], ["com.cool.sms"]))
+        self.assertEqual(d["launcher"], "com.google.android.apps.nexuslauncher")
+
+    def test_error_text_is_never_mistaken_for_a_package(self):
+        from unbloat.packages.state import parse_role_holders_strict, _component_pkg
+        self.assertEqual(parse_role_holders_strict("Unknown command: get-role-holders\n"), [])
+        self.assertEqual(parse_role_holders_strict("cmd: Can't find service: role"), [])
+        self.assertEqual(parse_role_holders_strict("com.a.b\n"), ["com.a.b"])
+        self.assertIsNone(_component_pkg("Exception occurred while executing"))
