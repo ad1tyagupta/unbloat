@@ -1,0 +1,73 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  unit:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}${{ matrix.pillow && ' + Pillow' || '' }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+        python: ["3.9", "3.13"]
+        pillow: [false]
+        include:
+          - os: ubuntu-latest
+            python: "3.13"
+            pillow: true
+          - os: windows-latest
+            python: "3.13"
+            pillow: true
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install Pillow
+        if: matrix.pillow
+        run: python -m pip install Pillow
+      - name: Unit and safety tests
+        run: python -m unittest discover -s tests -t . -v
+      - name: Knowledge base
+        run: python -m unbloat kb-check
+      - name: CLI smoke test
+        run: |
+          python -m unbloat --help
+          python -m unbloat doctor
+
+  emulator:
+    name: Android emulator end-to-end (API ${{ matrix.api }})
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    strategy:
+      fail-fast: false
+      matrix:
+        api: [29, 34]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+      - name: Run end-to-end test on emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        env:
+          UNBLOAT_E2E_SERIAL: emulator-5554
+        with:
+          api-level: ${{ matrix.api }}
+          target: default
+          arch: x86_64
+          disable-animations: true
+          emulator-options: -no-window -gpu swiftshader_indirect -no-snapshot -noaudio -no-boot-anim
+          script: python -m unittest tests.test_e2e_emulator -v
