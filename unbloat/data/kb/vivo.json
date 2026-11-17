@@ -1,0 +1,182 @@
+{
+ "family": "vivo",
+ "description": "Vivo and iQOO phones running Funtouch OS or OriginOS.",
+ "packages": [
+  {
+   "package": "com.vivo.browser",
+   "name": "Vivo Browser",
+   "what": "Vivo's web browser.",
+   "tier": "safe",
+   "breaks": "If it is your default browser, pick another first.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.website",
+   "name": "vivo.com",
+   "what": "Vivo's shop and support app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.hiboard",
+   "name": "Jovi Home",
+   "what": "The page left of the home screen.",
+   "tier": "safe",
+   "breaks": "The Jovi Home page disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.magazine",
+   "name": "Lock-screen poster",
+   "what": "Rotating lock-screen wallpapers with promoted content.",
+   "tier": "safe",
+   "breaks": "The lock-screen wallpaper stops rotating.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.compass",
+   "name": "Compass",
+   "what": "Compass app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.appstore",
+   "name": "V-Appstore",
+   "what": "Vivo's app store.",
+   "tier": "caution",
+   "breaks": "Vivo's own apps stop updating through V-Appstore.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.easyshare",
+   "name": "EasyShare",
+   "what": "File sharing and phone-to-phone transfer.",
+   "tier": "caution",
+   "breaks": "EasyShare transfers are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.email",
+   "name": "Email",
+   "what": "Vivo's email app.",
+   "tier": "caution",
+   "breaks": "Mail accounts set up in this app stop notifying you.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.weather",
+   "name": "Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.bbkmusic",
+   "name": "i Music",
+   "what": "Vivo's music player.",
+   "tier": "caution",
+   "breaks": "Music files open in another player.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.BBKClock",
+   "name": "Clock",
+   "what": "Alarms and timers.",
+   "tier": "caution",
+   "breaks": "Alarms you have set will not ring.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.bbk.theme",
+   "name": "i Theme",
+   "what": "Themes, fonts and wallpapers.",
+   "tier": "caution",
+   "breaks": "You cannot change theme or wallpaper from Settings.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.smartshot",
+   "name": "S-capture",
+   "what": "Screenshots and screen recording.",
+   "tier": "caution",
+   "breaks": "Long screenshots and screen recording stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.assistant",
+   "name": "Jovi assistant",
+   "what": "Smart scene suggestions.",
+   "tier": "caution",
+   "breaks": "Smart suggestions and some reminders stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.game",
+   "name": "Game Centre",
+   "what": "Vivo's games store.",
+   "tier": "caution",
+   "breaks": "Only this app goes away. Rated caution because the package name was not checked on a device.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.doubleinstance",
+   "name": "App clone",
+   "what": "Runs a second copy of chat apps.",
+   "tier": "caution",
+   "breaks": "Second copies of chat apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.FMRadio",
+   "name": "FM radio",
+   "what": "FM radio app.",
+   "tier": "caution",
+   "breaks": "FM radio is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.space",
+   "name": "Vivo community",
+   "what": "Vivo forum and shop app.",
+   "tier": "caution",
+   "breaks": "Only this app goes away. Rated caution because the package name was not checked on a device.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.gallery",
+   "name": "Albums",
+   "what": "Photo gallery.",
+   "tier": "risky",
+   "breaks": "The camera's preview button and photo pickers in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.bbk.cloud",
+   "name": "Vivo Cloud",
+   "what": "Cloud backup and sync.",
+   "tier": "risky",
+   "breaks": "Cloud sync and backup stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.bbk.account",
+   "name": "Vivo account",
+   "what": "Your Vivo sign-in.",
+   "tier": "risky",
+   "breaks": "Account features break, including Find Phone.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vivo.findphone",
+   "name": "Find Phone",
+   "what": "Locate or lock a lost phone.",
+   "tier": "risky",
+   "breaks": "You cannot find or lock the phone if it is lost.",
+   "applies_to": "any"
+  }
+ ]
+}

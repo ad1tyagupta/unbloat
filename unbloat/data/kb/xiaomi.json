@@ -1,0 +1,342 @@
+{
+ "family": "xiaomi",
+ "description": "Xiaomi, Redmi and POCO phones running MIUI or HyperOS.",
+ "packages": [
+  {
+   "package": "com.miui.analytics",
+   "name": "Analytics",
+   "what": "Sends usage statistics to Xiaomi.",
+   "tier": "safe",
+   "breaks": "Nothing you would notice.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.msa.global",
+   "name": "MSA (system ads)",
+   "what": "Shows adverts inside Xiaomi's own apps.",
+   "tier": "safe",
+   "breaks": "Adverts in system apps stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.msa",
+   "name": "MSA (system ads)",
+   "what": "Shows adverts inside Xiaomi's own apps.",
+   "tier": "safe",
+   "breaks": "Adverts in system apps stop.",
+   "applies_to": "China ROM"
+  },
+  {
+   "package": "com.miui.systemAdSolution",
+   "name": "MSA (system ads)",
+   "what": "Older name of Xiaomi's advert service.",
+   "tier": "safe",
+   "breaks": "Adverts in system apps stop.",
+   "applies_to": "older MIUI"
+  },
+  {
+   "package": "com.miui.bugreport",
+   "name": "Feedback",
+   "what": "Sends bug reports to Xiaomi.",
+   "tier": "safe",
+   "breaks": "You cannot send feedback to Xiaomi from the phone.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.miservice",
+   "name": "Services and feedback",
+   "what": "Xiaomi support app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.videoplayer",
+   "name": "Mi Video",
+   "what": "Video player with online content.",
+   "tier": "safe",
+   "breaks": "Videos open in another player or Gallery.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.player",
+   "name": "Mi Music",
+   "what": "Music player with online content.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.mi.globalbrowser",
+   "name": "Mi Browser",
+   "what": "Xiaomi's web browser.",
+   "tier": "safe",
+   "breaks": "If it is your default browser, pick another first.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.hybrid",
+   "name": "Quick apps",
+   "what": "Runs mini apps without installing them.",
+   "tier": "safe",
+   "breaks": "Quick apps stop opening.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.hybrid.accessory",
+   "name": "Quick apps accessory",
+   "what": "Helper for Quick apps.",
+   "tier": "safe",
+   "breaks": "Nothing outside Quick apps.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.glgm",
+   "name": "Games",
+   "what": "Xiaomi's games store.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.compass",
+   "name": "Compass",
+   "what": "Compass app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.midrop",
+   "name": "ShareMe",
+   "what": "File sharing app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.android.fashiongallery",
+   "name": "Wallpaper Carousel",
+   "what": "Rotating lock-screen wallpapers with promoted content.",
+   "tier": "safe",
+   "breaks": "The lock-screen wallpaper stops rotating.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.touchassistant",
+   "name": "Quick ball",
+   "what": "Floating shortcut button.",
+   "tier": "safe",
+   "breaks": "The floating Quick ball is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.virtualsim",
+   "name": "Mi Roaming",
+   "what": "Sells roaming data plans.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.duokan.phone.remotecontroller",
+   "name": "Mi Remote",
+   "what": "Infrared remote control app.",
+   "tier": "safe",
+   "breaks": "You cannot use the phone as a TV remote.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.huanji",
+   "name": "Mi Mover",
+   "what": "Moves data from an old phone.",
+   "tier": "safe",
+   "breaks": "You cannot transfer data with Mi Mover until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.joyose",
+   "name": "Joyose",
+   "what": "Game tuning and usage reporting.",
+   "tier": "caution",
+   "breaks": "Game Turbo features and some thermal tuning may change.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.daemon",
+   "name": "MIUI Daemon",
+   "what": "Collects system statistics.",
+   "tier": "caution",
+   "breaks": "Usually nothing; on some versions battery statistics screens misbehave.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.mipicks",
+   "name": "GetApps",
+   "what": "Xiaomi's app store.",
+   "tier": "caution",
+   "breaks": "Xiaomi's own apps stop updating through GetApps.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.yellowpage",
+   "name": "Yellow pages",
+   "what": "Caller identification and business lookup.",
+   "tier": "caution",
+   "breaks": "Caller ID for unknown business numbers stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.cleanmaster",
+   "name": "Cleaner",
+   "what": "Storage cleaner inside the Security app.",
+   "tier": "caution",
+   "breaks": "The Cleaner button in the Security app stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.weather2",
+   "name": "Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.notes",
+   "name": "Notes",
+   "what": "Notes app.",
+   "tier": "caution",
+   "breaks": "Your notes cannot be opened until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.calculator",
+   "name": "Calculator",
+   "what": "Calculator app.",
+   "tier": "caution",
+   "breaks": "No calculator unless another one is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.fm",
+   "name": "FM radio",
+   "what": "FM radio app.",
+   "tier": "caution",
+   "breaks": "FM radio is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.payment",
+   "name": "Mi Pay",
+   "what": "Xiaomi payments.",
+   "tier": "caution",
+   "breaks": "Mi Pay stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.mipay.wallet.in",
+   "name": "Mi Pay (India)",
+   "what": "Xiaomi payments.",
+   "tier": "caution",
+   "breaks": "Mi Pay stops working.",
+   "applies_to": "India"
+  },
+  {
+   "package": "com.miui.personalassistant",
+   "name": "App vault",
+   "what": "The page left of the home screen.",
+   "tier": "caution",
+   "breaks": "The App vault page disappears; some home-screen widgets go with it.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.screenrecorder",
+   "name": "Screen recorder",
+   "what": "Records the screen.",
+   "tier": "caution",
+   "breaks": "Screen recording from the control centre stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.mishare.connectivity",
+   "name": "Mi Share",
+   "what": "Sends files to nearby devices.",
+   "tier": "caution",
+   "breaks": "Mi Share stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.scanner",
+   "name": "Scanner",
+   "what": "QR and document scanner.",
+   "tier": "caution",
+   "breaks": "The scanner shortcut stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.contentcatcher",
+   "name": "Application extension service",
+   "what": "Lets system apps read on-screen content for features.",
+   "tier": "caution",
+   "breaks": "Some smart features in Xiaomi apps stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.gallery",
+   "name": "Gallery",
+   "what": "Photo gallery.",
+   "tier": "risky",
+   "breaks": "The camera's preview button and photo pickers in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.cloudservice",
+   "name": "Xiaomi Cloud",
+   "what": "Sync of contacts, messages and photos.",
+   "tier": "risky",
+   "breaks": "Xiaomi Cloud sync stops; Settings pages may crash.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.cloudbackup",
+   "name": "Xiaomi Cloud backup",
+   "what": "Backs up the phone to Xiaomi Cloud.",
+   "tier": "risky",
+   "breaks": "Cloud backups stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.miui.micloudsync",
+   "name": "Xiaomi Cloud sync",
+   "what": "Part of Xiaomi Cloud sync.",
+   "tier": "risky",
+   "breaks": "Xiaomi Cloud sync stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.account",
+   "name": "Xiaomi account",
+   "what": "Your Mi account sign-in.",
+   "tier": "risky",
+   "breaks": "Mi account features break, including Find Device and unlocking after a reset.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.discover",
+   "name": "System app updater",
+   "what": "Updates Xiaomi's system apps.",
+   "tier": "risky",
+   "breaks": "Xiaomi system apps stop receiving updates.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.xiaomi.simactivate.service",
+   "name": "SIM activation service",
+   "what": "Registers the SIM for Xiaomi services.",
+   "tier": "risky",
+   "breaks": "Find Device and Mi messaging features may fail.",
+   "applies_to": "any"
+  }
+ ]
+}

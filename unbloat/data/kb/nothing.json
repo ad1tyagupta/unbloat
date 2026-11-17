@@ -1,0 +1,62 @@
+{
+ "family": "nothing",
+ "description": "Nothing phones running Nothing OS.",
+ "packages": [
+  {
+   "package": "com.nothing.weather",
+   "name": "Nothing Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.smartcenter",
+   "name": "Nothing X",
+   "what": "Controls Nothing and CMF earbuds.",
+   "tier": "caution",
+   "breaks": "Earbud settings and battery widgets stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.soundrecorder",
+   "name": "Recorder",
+   "what": "Records audio.",
+   "tier": "caution",
+   "breaks": "Recordings cannot be played or made in this app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.hearthstone",
+   "name": "Glyph Composer",
+   "what": "Makes custom Glyph light ringtones.",
+   "tier": "caution",
+   "breaks": "Only this app goes away. Rated caution because the package name was not checked on a device.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.experimental",
+   "name": "Experimental features",
+   "what": "Nothing's opt-in test features.",
+   "tier": "caution",
+   "breaks": "Experimental features you switched on stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.camera",
+   "name": "Nothing Camera",
+   "what": "The camera app.",
+   "tier": "risky",
+   "breaks": "No camera app; quick-launch camera stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nothing.ketchum",
+   "name": "Glyph Interface",
+   "what": "The lights on the back of the phone.",
+   "tier": "risky",
+   "breaks": "Glyph lights stop working for calls, charging and notifications.",
+   "applies_to": "any"
+  }
+ ]
+}

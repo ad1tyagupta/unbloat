@@ -1,0 +1,150 @@
+{
+ "family": "pixel",
+ "description": "Google Pixel phones.",
+ "packages": [
+  {
+   "package": "com.google.android.apps.tips",
+   "name": "Pixel Tips",
+   "what": "How-to guide for Pixel features.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.dreamliner",
+   "name": "Pixel Stand",
+   "what": "Settings for the Pixel Stand wireless charger.",
+   "tier": "safe",
+   "breaks": "Pixel Stand settings are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.wallpaper",
+   "name": "Wallpaper and style",
+   "what": "Wallpaper picker.",
+   "tier": "caution",
+   "breaks": "You cannot change wallpaper; the Settings entry breaks.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.wallpaper.nexus",
+   "name": "Pixel live wallpapers",
+   "what": "Animated Pixel wallpapers.",
+   "tier": "caution",
+   "breaks": "Pixel live wallpapers become unavailable; a live wallpaper in use goes black.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.pixel.livewallpaper",
+   "name": "Pixel live wallpapers",
+   "what": "Animated Pixel wallpapers.",
+   "tier": "caution",
+   "breaks": "Pixel live wallpapers become unavailable; a live wallpaper in use goes black.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.customization.pixel",
+   "name": "Pixel themes",
+   "what": "Icon shapes, fonts and colours.",
+   "tier": "caution",
+   "breaks": "Style options in 'Wallpaper and style' disappear.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.recorder",
+   "name": "Recorder",
+   "what": "Records and transcribes audio.",
+   "tier": "caution",
+   "breaks": "Your recordings cannot be opened until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.pixelmigrate",
+   "name": "Data transfer tool",
+   "what": "Copies data from an old phone during setup.",
+   "tier": "caution",
+   "breaks": "Cable transfer from an old phone will not work until switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.helprtc",
+   "name": "Support services",
+   "what": "Screen sharing with Google support.",
+   "tier": "caution",
+   "breaks": "Google support cannot view your screen during a support call.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.markup",
+   "name": "Markup",
+   "what": "Edits and crops screenshots.",
+   "tier": "caution",
+   "breaks": "The edit button on screenshots stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.soundpicker",
+   "name": "Sounds",
+   "what": "Ringtone and alarm sound picker.",
+   "tier": "caution",
+   "breaks": "You cannot choose ringtones or alarm sounds.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.weather",
+   "name": "Pixel Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.accessibility.voiceaccess",
+   "name": "Voice Access",
+   "what": "Control the phone by voice.",
+   "tier": "caution",
+   "breaks": "Voice Access is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.tag",
+   "name": "Tags",
+   "what": "Reads NFC tags.",
+   "tier": "caution",
+   "breaks": "Tapping an NFC tag does nothing.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.safetyhub",
+   "name": "Personal Safety",
+   "what": "Emergency SOS, car crash detection, safety check.",
+   "tier": "risky",
+   "breaks": "Emergency SOS and crash detection stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.scone",
+   "name": "Adaptive Connectivity",
+   "what": "Switches between 5G and 4G to save battery.",
+   "tier": "risky",
+   "breaks": "Adaptive connectivity stops; battery life or connection quality may change.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.odad",
+   "name": "On-device abuse detection",
+   "what": "Looks for harmful app behaviour.",
+   "tier": "risky",
+   "breaks": "A Play Protect safety feature stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.nearby.halfsheet",
+   "name": "Fast Pair pop-up",
+   "what": "Shows the pairing card for nearby earbuds.",
+   "tier": "risky",
+   "breaks": "Fast Pair pop-ups for Bluetooth accessories stop.",
+   "applies_to": "any"
+  }
+ ]
+}

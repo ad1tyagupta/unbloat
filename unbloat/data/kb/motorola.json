@@ -1,0 +1,174 @@
+{
+ "family": "motorola",
+ "description": "Motorola phones.",
+ "packages": [
+  {
+   "package": "com.motorola.help",
+   "name": "Device Help",
+   "what": "Motorola support app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.genie",
+   "name": "Moto Help",
+   "what": "Older Motorola support app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.gamemode",
+   "name": "Moto Gametime",
+   "what": "In-game tools.",
+   "tier": "safe",
+   "breaks": "The in-game toolbar disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.brapps",
+   "name": "App Box",
+   "what": "Promoted app suggestions (Brazil).",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.spaces",
+   "name": "Family Space",
+   "what": "Child-safe mode.",
+   "tier": "safe",
+   "breaks": "Family Space is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.moto",
+   "name": "Moto",
+   "what": "Hub for gestures, display and tips.",
+   "tier": "caution",
+   "breaks": "The Moto app's settings pages for gestures and display are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.actions",
+   "name": "Moto Actions",
+   "what": "Gestures such as chop for torch and twist for camera.",
+   "tier": "caution",
+   "breaks": "Chop-for-torch, twist-for-camera and three-finger screenshot stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.motodisplay",
+   "name": "Peek Display",
+   "what": "Shows notifications on the sleeping screen.",
+   "tier": "caution",
+   "breaks": "Peek Display stops; the screen stays off for notifications.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.ccc.notification",
+   "name": "Motorola Notifications",
+   "what": "Messages from Motorola about your phone.",
+   "tier": "caution",
+   "breaks": "You may miss Motorola notices, including some update prompts.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.ccc.devicemanagement",
+   "name": "Device management",
+   "what": "Motorola remote device services.",
+   "tier": "caution",
+   "breaks": "Some Motorola account services stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.timeweatherwidget",
+   "name": "Time and weather widget",
+   "what": "The home-screen clock and weather widget.",
+   "tier": "caution",
+   "breaks": "The clock and weather widget goes blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.fmplayer",
+   "name": "FM radio",
+   "what": "FM radio app.",
+   "tier": "caution",
+   "breaks": "FM radio is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.securityhub",
+   "name": "Moto Secure",
+   "what": "Security settings hub.",
+   "tier": "caution",
+   "breaks": "The Moto Secure app and its secure folder entry are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.mobiledesktop",
+   "name": "Ready For",
+   "what": "Uses the phone with a TV or PC.",
+   "tier": "caution",
+   "breaks": "Ready For / Smart Connect stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.dolby.dolbyui",
+   "name": "Dolby Atmos",
+   "what": "Sound settings.",
+   "tier": "caution",
+   "breaks": "Dolby sound settings cannot be opened.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.personalize",
+   "name": "Personalise",
+   "what": "Themes, fonts and icon shapes.",
+   "tier": "caution",
+   "breaks": "You cannot change theme, font or icon shape.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.motocare",
+   "name": "Moto Care",
+   "what": "Motorola support service.",
+   "tier": "caution",
+   "breaks": "Motorola support features inside Settings may stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.bug2go",
+   "name": "Bug2Go",
+   "what": "Collects logs for Motorola bug reports.",
+   "tier": "caution",
+   "breaks": "You cannot send bug reports to Motorola.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.paks",
+   "name": "Motorola usage service",
+   "what": "Sends usage statistics to Motorola.",
+   "tier": "caution",
+   "breaks": "Usually nothing. Rated caution because the effect was not checked on a device.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.camera3",
+   "name": "Moto Camera",
+   "what": "The camera app.",
+   "tier": "risky",
+   "breaks": "No camera app; twist-for-camera stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.motorola.ccc.ota",
+   "name": "Motorola update services",
+   "what": "Downloads and installs system updates.",
+   "tier": "risky",
+   "breaks": "The phone stops receiving security and system updates.",
+   "applies_to": "any"
+  }
+ ]
+}

@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "unbloat"
+version = "0.1.0"
+description = "Clean up an Android phone from your computer, safely, with an AI assistant doing the work."
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Aditya Gupta" }]
+dependencies = []
+
+[project.optional-dependencies]
+photos = ["Pillow>=9"]
+
+[project.scripts]
+unbloat = "unbloat.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["unbloat*"]
+
+[tool.setuptools.package-data]
+unbloat = ["data/kb/*.json"]

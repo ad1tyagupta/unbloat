@@ -1,0 +1,451 @@
+user=0 
+    time="2026-11-17 10:28:00" type=ACTIVITY_STOPPED package=com.android.settings class=com.android.settings.FallbackHome instanceId=163107055 taskRootPackage=com.android.settings taskRootClass=com.android.settings.FallbackHome flags=0x0 
+    time="2026-11-17 10:28:03" type=STANDBY_BUCKET_CHANGED package=com.google.android.devicelockcontroller standbyBucket=5 reason=d flags=0x0 
+  In-memory daily stats
+  timeRange="11/17/2026, 10:27 – 10:28 AM" 
+    packages
+      package=com.google.android.networkstack.tethering totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.cts.priv.ctsshim totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.youtube totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:54" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.corner totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.ext.services totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:56" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.double totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.telephony totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.dynsystem totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.googlequicksearchbox totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:56" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.cellbroadcastservice totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:47" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.calendar totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:52" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.media totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:51" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.onetimeinitializer totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.ext.shared totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.gestural_wide_back totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.virtualmachine.res totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.wallpapercropper totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.federatedcompute totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.managedprovisioning.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.carrierconfig.auto_generated_rro_vendor__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_3_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_4_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_fold totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.simappdialog.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.externalstorage totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.htmlviewer totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.companiondevicemanager totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.mms.service totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.downloads totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.largescreenconfig totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.health.connect.backuprestore totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.soundpicker totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.marvin.talkbackoverlay totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.configupdater totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_3a_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_6_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_7_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_8_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.providers.media.module totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:49" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_3a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_4a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_6a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_7a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.googlewebview totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.plugin.globalactions.wallet totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.downloads.ui totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.hotspot2.osulogin totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.vending totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.pacprocessor totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.simappdialog totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.adservices.api totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.hole totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.tall totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.certinstaller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.carrierconfig totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:52" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.marvin.talkback totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.threebutton totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.sdksandbox totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.egg totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.mtp totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.nfc totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.ons totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:49" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.stk totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:47" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.backupconfirm totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.auto_generated_rro_vendor__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.twobutton totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.as totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:43" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.gm totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:54" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.gestural_extra_wide_back totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.accessibility.accessibilitymenu totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.permissioncontroller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:47" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_3 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_4 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_5 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_6 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_7 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_8 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.emulator.radio.config totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.bluetooth totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.settings totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.sharedstoragebackup totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.nfc.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.printspooler totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:50" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.emergency.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.connectivity.resources.goldfish.overlay totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.dreams.basic totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.networkstack.tethering.emulator totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.settings.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.as.oss totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:51" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.se totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.inputdevices totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.traceur.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.wellbeing totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:25" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.devicelockcontroller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.bips totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_3 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_4 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_5 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_6 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_7 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_8 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.captiveportallogin totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.musicfx totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.modulemetadata totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.emu01 totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.markup totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.settings.auto_generated_rro_vendor__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.cellbroadcastreceiver totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:47" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.webview totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:01" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.networkstack totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.rkpdapp totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.contacts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:52" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.server.telecom totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:44" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.keychain totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:53" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.server.telecom.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.googleconfig totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.chrome totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:58" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.bips.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.packageinstaller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.customization.pixel totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.gms totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:11" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.gsf totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:51" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.tag totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.tts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:54" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.permissioncontroller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.googlesdksetup totalTimeUsed="00:02" lastTimeUsed="2026-11-17 10:27:52" totalTimeVisible="00:09" lastTimeVisible="2026-11-17 10:28:00" lastTimeComponentUsed="2026-11-17 10:27:50" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=1 
+      package=com.android.calllogbackup totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.partnersetup totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.cameraextensions totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.wallpaper.nexus totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.localtransport totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:53" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.nexuslauncher totalTimeUsed="00:00" lastTimeUsed="2026-11-17 10:27:52" totalTimeVisible="00:00" lastTimeVisible="2026-11-17 10:27:52" lastTimeComponentUsed="2026-11-17 10:27:52" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=1 
+      package=com.google.android.nearby.halfsheet totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.carrierdefaultapp totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.credentialmanager totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.theme.font.notoserifsource totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.proxyhandler totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.safetycenter.resources totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.display.cutout.emulation.waterfall totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.intentresolver totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.transparent totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.connectivity.resources totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.contacts.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.feedback totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.printservice.recommendation totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.managedprovisioning totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:52" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.soundpicker totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.documentsui totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:09" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_3a_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_6_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_7_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_8_pro totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.mainline.telemetry totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.systemui.gxoverlay totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.carrierconfig.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.emulator.multidisplay totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:53" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.largescreensettingsprovider totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.partnerbookmarks totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.role.notes.enabled totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.wallpaper.livepicker totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.telephony.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.phone.auto_generated_rro_vendor__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.mainline.adservices totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.imsserviceentitlement totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.healthconnect.controller totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_2_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_3_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_4_xl totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.emulation.pixel_fold totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.storagemanager totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.bookmarkprovider totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.overlay.pixelconfigcommon totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.settings totalTimeUsed="00:00" lastTimeUsed="2026-11-17 10:27:50" totalTimeVisible="00:11" lastTimeVisible="2026-11-17 10:28:00" lastTimeComponentUsed="2026-11-17 10:27:54" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=1 
+      package=com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_3a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_4a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_6a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui.emulation.pixel_7a totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.settings.intelligence totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.uwb.resources totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.cts.ctsshim totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.wifi.resources totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.wifi.dialog totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.telephony.satellite totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.vpndialogs totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.wallpaper totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:28:09" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.odad totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.phone totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.shell totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.wallpaperbackup totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.blockednumber totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:51" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.settings.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.userdictionary totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.emergency totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.gestural totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.location.fused totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:45" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.systemui totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.ondevicepersonalization.services totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.youtube.music totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:57" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.bluetoothmidiservice totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.traceur totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.storagemanager.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.cellbroadcastreceiver totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.phone.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android.auto_generated_rro_product__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.bluetooth totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:46" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.providers.contacts totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:53" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.android.internal.systemui.navbar.gestural_narrow_back totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.inputmethod.latin totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="2026-11-17 10:27:48" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=android.auto_generated_rro_vendor__ totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+      package=com.google.android.apps.restore totalTimeUsed="00:00" lastTimeUsed="1970-01-01 05:30:00" totalTimeVisible="00:00" lastTimeVisible="1970-01-01 05:30:00" lastTimeComponentUsed="1970-01-01 05:30:00" totalTimeFS="00:00" lastTimeFS="1970-01-01 05:30:00" appLaunchCount=0 
+    
+    ChooserCounts
+      package=com.google.android.networkstack.tethering 
+      package=com.android.cts.priv.ctsshim 
+      package=com.google.android.youtube 
+      package=com.android.internal.display.cutout.emulation.corner 
+      package=com.google.android.ext.services 
+      package=com.android.internal.display.cutout.emulation.double 
+      package=com.android.providers.telephony 
+      package=com.android.dynsystem 
+      package=com.google.android.googlequicksearchbox 
+      package=com.google.android.cellbroadcastservice 
+      package=com.android.providers.calendar 
+      package=com.android.providers.media 
+      package=com.google.android.onetimeinitializer 
+      package=com.google.android.ext.shared 
+      package=com.android.internal.systemui.navbar.gestural_wide_back 
+      package=com.android.virtualmachine.res 
+      package=com.android.wallpapercropper 
+      package=com.google.android.federatedcompute 
+      package=com.android.managedprovisioning.auto_generated_rro_product__ 
+      package=com.android.carrierconfig.auto_generated_rro_vendor__ 
+      package=com.android.systemui.emulation.pixel_3_xl 
+      package=com.android.systemui.emulation.pixel_4_xl 
+      package=com.android.systemui.emulation.pixel_fold 
+      package=com.android.simappdialog.auto_generated_rro_product__ 
+      package=com.android.externalstorage 
+      package=com.android.htmlviewer 
+      package=com.android.companiondevicemanager 
+      package=com.android.mms.service 
+      package=com.android.providers.downloads 
+      package=com.google.android.overlay.largescreenconfig 
+      package=com.google.android.health.connect.backuprestore 
+      package=com.android.systemui.auto_generated_rro_product__ 
+      package=com.google.android.soundpicker 
+      package=com.google.android.marvin.talkbackoverlay 
+      package=com.google.android.configupdater 
+      package=com.android.internal.emulation.pixel_3a_xl 
+      package=com.android.internal.emulation.pixel_6_pro 
+      package=com.android.internal.emulation.pixel_7_pro 
+      package=com.android.internal.emulation.pixel_8_pro 
+      package=com.google.android.providers.media.module 
+      package=com.android.internal.emulation.pixel_3a 
+      package=com.android.internal.emulation.pixel_4a 
+      package=com.android.internal.emulation.pixel_6a 
+      package=com.android.internal.emulation.pixel_7a 
+      package=com.google.android.overlay.googlewebview 
+      package=com.android.systemui.plugin.globalactions.wallet 
+      package=com.android.providers.downloads.ui 
+      package=com.google.android.hotspot2.osulogin 
+      package=com.android.vending 
+      package=com.android.pacprocessor 
+      package=com.android.simappdialog 
+      package=com.google.android.adservices.api 
+      package=com.android.internal.display.cutout.emulation.hole 
+      package=com.android.internal.display.cutout.emulation.tall 
+      package=com.android.certinstaller 
+      package=com.android.carrierconfig 
+      package=com.google.android.marvin.talkback 
+      package=com.android.internal.systemui.navbar.threebutton 
+      package=android 
+      package=com.google.android.sdksandbox 
+      package=com.android.egg 
+      package=com.android.mtp 
+      package=com.android.nfc 
+      package=com.android.ons 
+      package=com.android.stk 
+      package=com.android.backupconfirm 
+      package=com.android.systemui.auto_generated_rro_vendor__ 
+      package=com.android.internal.systemui.navbar.twobutton 
+      package=com.google.android.as 
+      package=com.google.android.gm 
+      package=com.android.internal.systemui.navbar.gestural_extra_wide_back 
+      package=com.android.systemui.accessibility.accessibilitymenu 
+      package=com.google.android.permissioncontroller 
+      package=com.android.systemui.emulation.pixel_3 
+      package=com.android.systemui.emulation.pixel_4 
+      package=com.android.systemui.emulation.pixel_5 
+      package=com.android.systemui.emulation.pixel_6 
+      package=com.android.systemui.emulation.pixel_7 
+      package=com.android.systemui.emulation.pixel_8 
+      package=com.android.emulator.radio.config 
+      package=com.google.android.bluetooth 
+      package=com.android.providers.settings 
+      package=com.android.sharedstoragebackup 
+      package=com.android.nfc.auto_generated_rro_product__ 
+      package=com.android.printspooler 
+      package=com.android.emergency.auto_generated_rro_product__ 
+      package=com.google.android.connectivity.resources.goldfish.overlay 
+      package=com.android.dreams.basic 
+      package=com.google.android.networkstack.tethering.emulator 
+      package=com.android.providers.settings.auto_generated_rro_product__ 
+      package=com.google.android.as.oss 
+      package=com.android.se 
+      package=com.android.inputdevices 
+      package=com.android.traceur.auto_generated_rro_product__ 
+      package=com.google.android.apps.wellbeing 
+      package=com.google.android.devicelockcontroller 
+      package=com.android.bips 
+      package=com.android.internal.emulation.pixel_3 
+      package=com.android.internal.emulation.pixel_4 
+      package=com.android.internal.emulation.pixel_5 
+      package=com.android.internal.emulation.pixel_6 
+      package=com.android.internal.emulation.pixel_7 
+      package=com.android.internal.emulation.pixel_8 
+      package=com.google.android.captiveportallogin 
+      package=com.android.musicfx 
+      package=com.google.android.modulemetadata 
+      package=com.android.internal.display.cutout.emulation.emu01 
+      package=com.google.android.markup 
+      package=com.android.providers.settings.auto_generated_rro_vendor__ 
+      package=com.android.cellbroadcastreceiver 
+      package=com.google.android.webview 
+      package=com.google.android.networkstack 
+      package=com.google.android.rkpdapp 
+      package=com.google.android.contacts 
+      package=com.android.server.telecom 
+      package=com.android.keychain 
+      package=com.android.server.telecom.auto_generated_rro_product__ 
+      package=com.google.android.overlay.googleconfig 
+      package=com.android.chrome 
+      package=com.android.bips.auto_generated_rro_product__ 
+      package=com.google.android.packageinstaller 
+      package=com.google.android.apps.customization.pixel 
+      package=com.google.android.gms 
+      package=com.google.android.gsf 
+      package=com.google.android.tag 
+      package=com.google.android.tts 
+      package=com.google.android.overlay.permissioncontroller 
+      package=com.google.android.googlesdksetup 
+      package=com.android.calllogbackup 
+      package=com.google.android.partnersetup 
+      package=com.android.cameraextensions 
+      package=com.google.android.apps.wallpaper.nexus 
+      package=com.android.localtransport 
+      package=com.google.android.apps.nexuslauncher 
+      package=com.google.android.nearby.halfsheet 
+      package=com.android.carrierdefaultapp 
+      package=com.android.credentialmanager 
+      package=com.android.theme.font.notoserifsource 
+      package=com.android.proxyhandler 
+      package=com.google.android.safetycenter.resources 
+      package=com.android.internal.display.cutout.emulation.waterfall 
+      package=com.android.intentresolver 
+      package=com.android.internal.systemui.navbar.transparent 
+      package=com.google.android.connectivity.resources 
+      package=com.android.providers.contacts.auto_generated_rro_product__ 
+      package=com.google.android.feedback 
+      package=com.google.android.printservice.recommendation 
+      package=com.android.managedprovisioning 
+      package=com.android.soundpicker 
+      package=com.google.android.documentsui 
+      package=com.android.systemui.emulation.pixel_3a_xl 
+      package=com.android.systemui.emulation.pixel_6_pro 
+      package=com.android.systemui.emulation.pixel_7_pro 
+      package=com.android.systemui.emulation.pixel_8_pro 
+      package=com.google.mainline.telemetry 
+      package=com.google.android.systemui.gxoverlay 
+      package=com.android.carrierconfig.auto_generated_rro_product__ 
+      package=com.android.emulator.multidisplay 
+      package=com.google.android.overlay.largescreensettingsprovider 
+      package=com.android.providers.partnerbookmarks 
+      package=com.android.role.notes.enabled 
+      package=com.android.wallpaper.livepicker 
+      package=com.android.providers.telephony.auto_generated_rro_product__ 
+      package=com.android.phone.auto_generated_rro_vendor__ 
+      package=com.google.mainline.adservices 
+      package=com.android.imsserviceentitlement 
+      package=com.google.android.healthconnect.controller 
+      package=com.android.internal.emulation.pixel_2_xl 
+      package=com.android.internal.emulation.pixel_3_xl 
+      package=com.android.internal.emulation.pixel_4_xl 
+      package=com.android.internal.emulation.pixel_fold 
+      package=com.android.storagemanager 
+      package=com.android.bookmarkprovider 
+      package=com.google.android.overlay.pixelconfigcommon 
+      package=com.android.settings 
+      package=com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__ 
+      package=com.android.systemui.emulation.pixel_3a 
+      package=com.android.systemui.emulation.pixel_4a 
+      package=com.android.systemui.emulation.pixel_6a 
+      package=com.android.systemui.emulation.pixel_7a 
+      package=com.google.android.settings.intelligence 
+      package=com.google.android.uwb.resources 
+      package=com.android.cts.ctsshim 
+      package=com.google.android.wifi.resources 
+      package=com.google.android.wifi.dialog 
+      package=com.google.android.telephony.satellite 
+      package=com.android.vpndialogs 
+      package=com.google.android.apps.wallpaper 
+      package=com.google.android.odad 
+      package=com.android.phone 
+      package=com.android.shell 
+      package=com.android.wallpaperbackup 
+      package=com.android.providers.blockednumber 
+      package=com.android.settings.auto_generated_rro_product__ 
+      package=com.android.providers.userdictionary 
+      package=com.android.emergency 
+      package=com.android.internal.systemui.navbar.gestural 
+      package=com.android.location.fused 
+      package=com.android.systemui 
+      package=com.google.android.ondevicepersonalization.services 
+      package=com.google.android.apps.youtube.music 
+      package=com.android.bluetoothmidiservice 
+      package=com.android.traceur 
+      package=com.android.storagemanager.auto_generated_rro_product__ 
+      package=com.google.android.cellbroadcastreceiver 
+      package=com.android.phone.auto_generated_rro_product__ 
+      package=android.auto_generated_rro_product__ 
+      package=com.android.bluetooth 
+      package=com.android.providers.contacts 
+      package=com.android.internal.systemui.navbar.gestural_narrow_back 
+      package=com.google.android.inputmethod.latin 
+      package=android.auto_generated_rro_vendor__ 
+      package=com.google.android.apps.restore 
+    configurations
+      config=en-rUS-ldltr-sw411dp-w411dp-h866dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h866dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:54" count=1 
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h866dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:54" count=1 
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h842dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h914dp-normal-long-notround-nowidecg-lowdr-port-420dpi-notouch-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h914dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h914dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h842dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h842dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h842dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v34 totalTime="00:04" lastTime="2026-11-17 10:27:53" count=1 
+      config=mcc310-mnc260-en-rUS-ldltr-sw411dp-w411dp-h842dp-normal-long-notround-nowidecg-lowdr-port-notnight-420dpi-finger-keysexposed-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:54" count=1 
+      config=en-rUS-ldltr-sw411dp-w411dp-h914dp-normal-long-notround-nowidecg-lowdr-port-420dpi-finger-keyshidden-nokeys-navhidden-nonav-v34 totalTime="00:00" lastTime="2026-11-17 10:27:49" count=1 
+    event aggregations
+      screen-interactive: 1x for "00:00" (now running, started at )
+  In-memory weekly stats
+  timeRange="11/17/2026, 10:27 – 10:28 AM" 

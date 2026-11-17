@@ -1,0 +1,310 @@
+{
+ "family": "oppo",
+ "description": "Oppo, realme and OnePlus phones running ColorOS, realme UI or OxygenOS.",
+ "packages": [
+  {
+   "package": "com.heytap.browser",
+   "name": "HeyTap Browser",
+   "what": "The maker's web browser.",
+   "tier": "safe",
+   "breaks": "If it is your default browser, pick another first.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.music",
+   "name": "Music",
+   "what": "The maker's music player.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.pictorial",
+   "name": "Lock-screen magazine",
+   "what": "Rotating lock-screen wallpapers with promoted content.",
+   "tier": "safe",
+   "breaks": "The lock-screen wallpaper stops rotating.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.glance.internet",
+   "name": "Glance",
+   "what": "Lock-screen news and promoted content.",
+   "tier": "safe",
+   "breaks": "Glance on the lock screen stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.compass2",
+   "name": "Compass",
+   "what": "Compass app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.video",
+   "name": "Videos",
+   "what": "The maker's video player.",
+   "tier": "safe",
+   "breaks": "Videos open in another player or Photos.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.childrenspace",
+   "name": "Kid Space",
+   "what": "Child-safe mode.",
+   "tier": "safe",
+   "breaks": "Kid Space is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.assistantscreen",
+   "name": "Smart Assistant",
+   "what": "The page left of the home screen.",
+   "tier": "safe",
+   "breaks": "The Smart Assistant / Shelf page disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.floatassistant",
+   "name": "Assistive Ball",
+   "what": "Floating shortcut button.",
+   "tier": "safe",
+   "breaks": "The floating Assistive Ball is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nearme.gamecenter",
+   "name": "Game Centre",
+   "what": "The maker's games store.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.finshell.fin",
+   "name": "FinShell Pay",
+   "what": "Finance and payments app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.opos.cs",
+   "name": "Hot Apps",
+   "what": "Promoted app suggestions.",
+   "tier": "safe",
+   "breaks": "Promoted app folders stop refreshing.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oneplus.store",
+   "name": "OnePlus Store",
+   "what": "OnePlus shopping app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oneplus.membership",
+   "name": "Red Cable Club",
+   "what": "OnePlus membership app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oneplus.brickmode",
+   "name": "Zen Mode",
+   "what": "Locks the phone for a break.",
+   "tier": "safe",
+   "breaks": "Zen Mode is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.market",
+   "name": "App Market",
+   "what": "The maker's app store.",
+   "tier": "caution",
+   "breaks": "The maker's own apps stop updating through App Market.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oppo.market",
+   "name": "App Market",
+   "what": "The maker's app store.",
+   "tier": "caution",
+   "breaks": "The maker's own apps stop updating through App Market.",
+   "applies_to": "older ColorOS"
+  },
+  {
+   "package": "com.heytap.themestore",
+   "name": "Theme Store",
+   "what": "Themes, fonts and wallpapers.",
+   "tier": "caution",
+   "breaks": "You cannot change theme or font; the current one stays.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.mcs",
+   "name": "Push service",
+   "what": "Delivers notifications for the maker's apps.",
+   "tier": "caution",
+   "breaks": "Notifications from the maker's own apps may stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.gamespaceui",
+   "name": "Game Space",
+   "what": "In-game tools and performance settings.",
+   "tier": "caution",
+   "breaks": "The in-game toolbar disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oplus.games",
+   "name": "Games",
+   "what": "In-game tools and performance settings.",
+   "tier": "caution",
+   "breaks": "The in-game toolbar disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.weather2",
+   "name": "Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.calculator",
+   "name": "Calculator",
+   "what": "Calculator app.",
+   "tier": "caution",
+   "breaks": "No calculator unless another one is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.soundrecorder",
+   "name": "Recorder",
+   "what": "Records audio.",
+   "tier": "caution",
+   "breaks": "Recordings cannot be played or made in this app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.backuprestore",
+   "name": "Clone Phone",
+   "what": "Moves data from an old phone.",
+   "tier": "caution",
+   "breaks": "Clone Phone transfers are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.smartsidebar",
+   "name": "Smart Sidebar",
+   "what": "The swipe-in panel at the screen edge.",
+   "tier": "caution",
+   "breaks": "Smart Sidebar disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.oshare",
+   "name": "OPPO Share",
+   "what": "Sends files to nearby devices.",
+   "tier": "caution",
+   "breaks": "Nearby sharing with other Oppo-family phones stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.nearme.statistics.rom",
+   "name": "User Experience Programme",
+   "what": "Sends usage statistics to the maker.",
+   "tier": "caution",
+   "breaks": "Usually nothing; reported to affect some system features on certain versions.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oplus.statistics.rom",
+   "name": "User Experience Programme",
+   "what": "Sends usage statistics to the maker.",
+   "tier": "caution",
+   "breaks": "Usually nothing; reported to affect some system features on certain versions.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oplus.logkit",
+   "name": "Log kit",
+   "what": "Collects logs for feedback.",
+   "tier": "caution",
+   "breaks": "You cannot send logs with feedback.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oppo.logkit",
+   "name": "Log kit",
+   "what": "Collects logs for feedback.",
+   "tier": "caution",
+   "breaks": "You cannot send logs with feedback.",
+   "applies_to": "older ColorOS"
+  },
+  {
+   "package": "com.realmecomm.app",
+   "name": "realme Community",
+   "what": "realme forum app.",
+   "tier": "caution",
+   "breaks": "Only this app goes away. Rated caution because the package name was not checked on a device.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.cloud",
+   "name": "HeyTap Cloud",
+   "what": "Cloud backup and sync.",
+   "tier": "risky",
+   "breaks": "Cloud sync and backup stop; Settings pages may crash.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.heytap.usercenter",
+   "name": "HeyTap account",
+   "what": "Your maker account sign-in.",
+   "tier": "risky",
+   "breaks": "Account features break, including Find My Phone.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.filemanager",
+   "name": "Files",
+   "what": "File manager.",
+   "tier": "risky",
+   "breaks": "Opening downloads and attaching files in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.coloros.gallery3d",
+   "name": "Photos",
+   "what": "Photo gallery.",
+   "tier": "risky",
+   "breaks": "The camera's preview button and photo pickers in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oneplus.gallery",
+   "name": "OnePlus Gallery",
+   "what": "Photo gallery.",
+   "tier": "risky",
+   "breaks": "The camera's preview button and photo pickers in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.oneplus.account",
+   "name": "OnePlus account",
+   "what": "Your OnePlus sign-in.",
+   "tier": "risky",
+   "breaks": "Account features break, including cloud sync.",
+   "applies_to": "any"
+  }
+ ]
+}

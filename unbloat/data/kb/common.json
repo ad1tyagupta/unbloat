@@ -1,0 +1,558 @@
+{
+ "family": "common",
+ "description": "Google apps and common carrier and social preloads found on many brands.",
+ "packages": [
+  {
+   "package": "com.facebook.katana",
+   "name": "Facebook",
+   "what": "The Facebook app, preinstalled by the phone maker.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.facebook.appmanager",
+   "name": "Facebook App Manager",
+   "what": "Updates preinstalled Facebook apps in the background.",
+   "tier": "safe",
+   "breaks": "Preinstalled Facebook apps stop updating themselves outside the Play Store.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.facebook.system",
+   "name": "Facebook App Installer",
+   "what": "Installs and updates Facebook apps in the background.",
+   "tier": "safe",
+   "breaks": "Preinstalled Facebook apps stop updating themselves outside the Play Store.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.facebook.services",
+   "name": "Facebook Services",
+   "what": "Background helper for preinstalled Facebook apps.",
+   "tier": "safe",
+   "breaks": "Nothing outside Facebook's own apps.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.instagram.android",
+   "name": "Instagram",
+   "what": "The Instagram app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.netflix.mediaclient",
+   "name": "Netflix",
+   "what": "The Netflix app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.netflix.partner.activation",
+   "name": "Netflix activation helper",
+   "what": "Tells Netflix this phone came with it preinstalled.",
+   "tier": "safe",
+   "breaks": "Nothing you would notice.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.linkedin.android",
+   "name": "LinkedIn",
+   "what": "The LinkedIn app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.spotify.music",
+   "name": "Spotify",
+   "what": "The Spotify app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.snapchat.android",
+   "name": "Snapchat",
+   "what": "The Snapchat app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.zhiliaoapp.musically",
+   "name": "TikTok",
+   "what": "The TikTok app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.ss.android.ugc.trill",
+   "name": "TikTok",
+   "what": "The TikTok app (regional version).",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.amazon.mShop.android.shopping",
+   "name": "Amazon Shopping",
+   "what": "The Amazon shopping app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.amazon.appmanager",
+   "name": "Amazon app helper",
+   "what": "Preinstall helper for Amazon apps.",
+   "tier": "safe",
+   "breaks": "Nothing you would notice.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.microsoft.office.officehubrow",
+   "name": "Microsoft 365",
+   "what": "The Microsoft Office app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.microsoft.appmanager",
+   "name": "Link to Windows",
+   "what": "Connects the phone to a Windows PC.",
+   "tier": "safe",
+   "breaks": "Phone Link on your Windows PC stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.microsoft.skydrive",
+   "name": "OneDrive",
+   "what": "Microsoft cloud storage.",
+   "tier": "caution",
+   "breaks": "OneDrive stops. On Samsung phones, Gallery cloud sync uses OneDrive and stops too.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.youtube",
+   "name": "YouTube",
+   "what": "The YouTube app.",
+   "tier": "safe",
+   "breaks": "YouTube links open in the web browser instead.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.youtube.music",
+   "name": "YouTube Music",
+   "what": "Google's music app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.youtube.kids",
+   "name": "YouTube Kids",
+   "what": "YouTube for children.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.videos",
+   "name": "Google TV",
+   "what": "Google's film and TV app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.music",
+   "name": "Google Play Music",
+   "what": "Old Google music player.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.magazines",
+   "name": "Google News",
+   "what": "Google's news app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.podcasts",
+   "name": "Google Podcasts",
+   "what": "Google's podcast app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.books",
+   "name": "Google Play Books",
+   "what": "Google's e-book app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.keep",
+   "name": "Google Keep",
+   "what": "Google's notes app.",
+   "tier": "safe",
+   "breaks": "Keep notes are not shown on the phone (they stay in your Google account).",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.calculator",
+   "name": "Calculator",
+   "what": "Google's calculator.",
+   "tier": "safe",
+   "breaks": "No calculator unless another one is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.subscriptions.red",
+   "name": "Google One",
+   "what": "Google storage plan app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.chromecast.app",
+   "name": "Google Home",
+   "what": "Controls Chromecast and smart-home devices.",
+   "tier": "safe",
+   "breaks": "You cannot set up or control Chromecast and Nest devices from this phone.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.googleassistant",
+   "name": "Assistant shortcut",
+   "what": "A home-screen icon for Google Assistant.",
+   "tier": "safe",
+   "breaks": "Only the icon goes; Assistant itself is part of the Google app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.printservice.recommendation",
+   "name": "Print service recommendations",
+   "what": "Suggests printer plug-ins.",
+   "tier": "safe",
+   "breaks": "No printer plug-in suggestions when printing.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.tachyon",
+   "name": "Google Meet",
+   "what": "Video calling.",
+   "tier": "caution",
+   "breaks": "Video-call buttons in the phone and contacts apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.docs",
+   "name": "Google Drive",
+   "what": "Google cloud files.",
+   "tier": "caution",
+   "breaks": "Drive files cannot be opened on the phone; some apps' 'save to Drive' stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.photos",
+   "name": "Google Photos",
+   "what": "Photo gallery and cloud backup.",
+   "tier": "caution",
+   "breaks": "Photo backup stops. On some phones this is the only gallery app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.gm",
+   "name": "Gmail",
+   "what": "Google's email app.",
+   "tier": "caution",
+   "breaks": "No Gmail notifications. On some phones this is the only email app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.maps",
+   "name": "Google Maps",
+   "what": "Maps and navigation.",
+   "tier": "caution",
+   "breaks": "No navigation; map links and location sharing in other apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.calendar",
+   "name": "Google Calendar",
+   "what": "Calendar app.",
+   "tier": "caution",
+   "breaks": "No event reminders unless another calendar app is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.contacts",
+   "name": "Google Contacts",
+   "what": "Contacts app.",
+   "tier": "caution",
+   "breaks": "You cannot browse or edit contacts unless another contacts app is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.deskclock",
+   "name": "Clock",
+   "what": "Alarms and timers.",
+   "tier": "caution",
+   "breaks": "Alarms you have set will not ring.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.walletnfcrel",
+   "name": "Google Wallet",
+   "what": "Tap-to-pay and passes.",
+   "tier": "caution",
+   "breaks": "Paying by tapping the phone stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.nbu.paisa.user",
+   "name": "Google Pay",
+   "what": "Payments app.",
+   "tier": "caution",
+   "breaks": "Payments through Google Pay stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.wellbeing",
+   "name": "Digital Wellbeing",
+   "what": "Screen-time tools, Bedtime mode, Focus mode.",
+   "tier": "caution",
+   "breaks": "App timers, Bedtime mode and Focus mode stop; the Settings entry breaks.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.feedback",
+   "name": "Google feedback agent",
+   "what": "Sends crash and feedback reports to Google.",
+   "tier": "caution",
+   "breaks": "'Send feedback' buttons in Google apps may do nothing.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.projection.gearhead",
+   "name": "Android Auto",
+   "what": "Shows the phone on a car screen.",
+   "tier": "caution",
+   "breaks": "Android Auto in your car stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.tts",
+   "name": "Speech Services by Google",
+   "what": "Reads text aloud and powers voice typing in some apps.",
+   "tier": "caution",
+   "breaks": "Spoken navigation, read-aloud and TalkBack lose their voice.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.marvin.talkback",
+   "name": "Android Accessibility Suite",
+   "what": "TalkBack screen reader and other accessibility tools.",
+   "tier": "caution",
+   "breaks": "TalkBack, Select to Speak and Switch Access are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.chrome",
+   "name": "Chrome",
+   "what": "Google's web browser.",
+   "tier": "caution",
+   "breaks": "Links may have no browser to open in; some app sign-in screens use Chrome.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.restore",
+   "name": "Data transfer tool",
+   "what": "Copies data from an old phone during setup.",
+   "tier": "caution",
+   "breaks": "Restoring from a backup or old phone will not work until switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.ar.core",
+   "name": "Google Play Services for AR",
+   "what": "Augmented-reality support.",
+   "tier": "caution",
+   "breaks": "AR features in the camera and other apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.googlequicksearchbox",
+   "name": "Google app",
+   "what": "Search, Assistant, Discover feed, Lens, voice typing.",
+   "tier": "risky",
+   "breaks": "Assistant, the home-screen search bar, the Discover feed and Lens stop; some launchers misbehave.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.inputmethod.latin",
+   "name": "Gboard",
+   "what": "Google's keyboard.",
+   "tier": "risky",
+   "breaks": "If this is your only keyboard you cannot type, including your screen-lock password.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.messaging",
+   "name": "Google Messages",
+   "what": "Text messages (SMS and RCS).",
+   "tier": "risky",
+   "breaks": "You may be unable to send or read text messages.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.dialer",
+   "name": "Phone by Google",
+   "what": "The phone app.",
+   "tier": "risky",
+   "breaks": "You may be unable to make or answer calls.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.apps.turbo",
+   "name": "Device Health Services",
+   "what": "Battery estimates and adaptive battery.",
+   "tier": "risky",
+   "breaks": "Battery predictions and adaptive battery stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.as",
+   "name": "Android System Intelligence",
+   "what": "Smart text selection, Live Caption, Now Playing.",
+   "tier": "risky",
+   "breaks": "Several smart features stop; some phones show errors.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.google.android.as.oss",
+   "name": "Private Compute Services",
+   "what": "Support for Android System Intelligence.",
+   "tier": "risky",
+   "breaks": "Smart features that depend on it stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.vzw.hss.myverizon",
+   "name": "My Verizon",
+   "what": "Verizon's account app.",
+   "tier": "caution",
+   "breaks": "You cannot manage your Verizon account from the app; visual voicemail setup may be affected.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.tmobile.pr.mytmobile",
+   "name": "T-Mobile",
+   "what": "T-Mobile's account app.",
+   "tier": "caution",
+   "breaks": "You cannot manage your T-Mobile account from the app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.egg",
+   "name": "Android Easter egg",
+   "what": "The hidden game behind tapping the Android version.",
+   "tier": "safe",
+   "breaks": "The Easter egg no longer opens.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.dreams.basic",
+   "name": "Basic screensavers",
+   "what": "Simple screensavers shown while charging.",
+   "tier": "safe",
+   "breaks": "Those screensavers are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.dreams.phototable",
+   "name": "Photo screensavers",
+   "what": "Photo screensavers shown while charging.",
+   "tier": "safe",
+   "breaks": "Those screensavers are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.bookmarkprovider",
+   "name": "Bookmark store",
+   "what": "Old shared store for browser bookmarks.",
+   "tier": "safe",
+   "breaks": "Nothing on current phones.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.traceur",
+   "name": "System Tracing",
+   "what": "A developer tool for recording performance traces.",
+   "tier": "safe",
+   "breaks": "Developers cannot record system traces.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.wallpaper.livepicker",
+   "name": "Live wallpaper picker",
+   "what": "Lets you choose animated wallpapers.",
+   "tier": "caution",
+   "breaks": "You cannot pick live wallpapers.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.printspooler",
+   "name": "Print spooler",
+   "what": "Sends documents to printers.",
+   "tier": "caution",
+   "breaks": "Printing from the phone stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.bips",
+   "name": "Default print service",
+   "what": "Finds and prints to Wi-Fi printers.",
+   "tier": "caution",
+   "breaks": "Printing to Wi-Fi printers stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.htmlviewer",
+   "name": "HTML viewer",
+   "what": "Shows simple web pages such as licence screens.",
+   "tier": "caution",
+   "breaks": "Some help and licence screens will not open.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.calllogbackup",
+   "name": "Call log backup",
+   "what": "Includes your call history in Google backups.",
+   "tier": "caution",
+   "breaks": "Call history is no longer backed up.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.android.musicfx",
+   "name": "Equaliser",
+   "what": "System sound equaliser.",
+   "tier": "caution",
+   "breaks": "Equaliser settings in music apps may not open.",
+   "applies_to": "any"
+  }
+ ]
+}

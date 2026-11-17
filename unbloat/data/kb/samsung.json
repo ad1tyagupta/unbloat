@@ -1,0 +1,566 @@
+{
+ "family": "samsung",
+ "description": "Samsung Galaxy phones and tablets running One UI.",
+ "packages": [
+  {
+   "package": "com.samsung.android.bixby.agent",
+   "name": "Bixby Voice",
+   "what": "Samsung's voice assistant.",
+   "tier": "safe",
+   "breaks": "Bixby voice commands stop. The side key can be reassigned in Settings.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.bixby.wakeup",
+   "name": "Bixby voice wake-up",
+   "what": "Listens for 'Hi Bixby'.",
+   "tier": "safe",
+   "breaks": "'Hi Bixby' no longer wakes the assistant.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.spage",
+   "name": "Samsung Free",
+   "what": "News and media page left of the home screen.",
+   "tier": "safe",
+   "breaks": "The Samsung Free page disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.game.gamehome",
+   "name": "Game Launcher",
+   "what": "A folder-style launcher for games.",
+   "tier": "safe",
+   "breaks": "Game Launcher disappears; games still open from the home screen.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.tips",
+   "name": "Tips",
+   "what": "Samsung's how-to guide.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.voc",
+   "name": "Samsung Members",
+   "what": "Support, diagnostics and community app.",
+   "tier": "safe",
+   "breaks": "Samsung Members and its phone diagnostics are unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.kidsinstaller",
+   "name": "Samsung Kids installer",
+   "what": "Downloads the Samsung Kids mode.",
+   "tier": "safe",
+   "breaks": "Samsung Kids cannot be set up.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.kidshome",
+   "name": "Samsung Kids",
+   "what": "Child-safe home screen.",
+   "tier": "safe",
+   "breaks": "Samsung Kids mode is unavailable.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.ardrawing",
+   "name": "AR Doodle",
+   "what": "Draw on camera video.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.arzone",
+   "name": "AR Zone",
+   "what": "Hub for AR camera features.",
+   "tier": "safe",
+   "breaks": "AR Zone disappears from the camera.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.mimage.avatarstickers",
+   "name": "AR Emoji stickers",
+   "what": "Stickers made from your AR Emoji.",
+   "tier": "safe",
+   "breaks": "AR Emoji stickers disappear from the keyboard.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.livestickers",
+   "name": "Deco Pic",
+   "what": "Live stickers for the camera.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.mateagent",
+   "name": "Galaxy Friends",
+   "what": "Support for themed Samsung accessories.",
+   "tier": "safe",
+   "breaks": "Themed accessory cases no longer change the phone's theme.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.sree",
+   "name": "Samsung Global Goals",
+   "what": "Charity ads and wallpapers app.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.tvplus",
+   "name": "Samsung TV Plus",
+   "what": "Free streaming TV channels.",
+   "tier": "safe",
+   "breaks": "Only this app goes away until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.simplesharing",
+   "name": "Link Sharing",
+   "what": "Shares large files as a link.",
+   "tier": "safe",
+   "breaks": "The Link Sharing option disappears from the share menu.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.bixby.service",
+   "name": "Bixby service",
+   "what": "Background part of Bixby.",
+   "tier": "caution",
+   "breaks": "Bixby features inside other Samsung apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.visionintelligence",
+   "name": "Bixby Vision",
+   "what": "Recognises objects and text in the camera and gallery.",
+   "tier": "caution",
+   "breaks": "Camera scene suggestions and text-in-photo features may stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.routines",
+   "name": "Modes and Routines",
+   "what": "Automations such as 'when I get home'.",
+   "tier": "caution",
+   "breaks": "Your routines and modes stop running.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.game.gametools",
+   "name": "Game Booster",
+   "what": "In-game tools and performance settings.",
+   "tier": "caution",
+   "breaks": "The in-game toolbar disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.sbrowser",
+   "name": "Samsung Internet",
+   "what": "Samsung's web browser.",
+   "tier": "caution",
+   "breaks": "If it is your default browser, links have nowhere to open until you choose another.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.email.provider",
+   "name": "Samsung Email",
+   "what": "Samsung's email app.",
+   "tier": "caution",
+   "breaks": "Mail accounts set up in this app stop notifying you.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.calendar",
+   "name": "Samsung Calendar",
+   "what": "Calendar app.",
+   "tier": "caution",
+   "breaks": "No event reminders unless another calendar app is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.popupcalculator",
+   "name": "Samsung Calculator",
+   "what": "Calculator app.",
+   "tier": "caution",
+   "breaks": "No calculator unless another one is installed.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.notes",
+   "name": "Samsung Notes",
+   "what": "Notes app.",
+   "tier": "caution",
+   "breaks": "Your Samsung Notes cannot be opened until it is switched back on.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.voicenote",
+   "name": "Voice Recorder",
+   "what": "Records audio.",
+   "tier": "caution",
+   "breaks": "Recordings cannot be played or made in this app.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.reminder",
+   "name": "Reminder",
+   "what": "Samsung's reminders app.",
+   "tier": "caution",
+   "breaks": "Reminders you set will not alert you.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.samsungapps",
+   "name": "Galaxy Store",
+   "what": "Samsung's app store.",
+   "tier": "caution",
+   "breaks": "Samsung apps and watch apps stop updating; themes and fonts cannot be bought.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.themestore",
+   "name": "Galaxy Themes",
+   "what": "Themes, icons and wallpapers.",
+   "tier": "caution",
+   "breaks": "You cannot change theme or icon pack; the current theme stays.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.watchmanager",
+   "name": "Galaxy Wearable",
+   "what": "Connects Galaxy watches and earbuds.",
+   "tier": "caution",
+   "breaks": "Galaxy watches and Buds cannot be managed from the phone.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.aremoji",
+   "name": "AR Emoji",
+   "what": "Animated avatar of you.",
+   "tier": "caution",
+   "breaks": "AR Emoji in the camera and keyboard stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.stickercenter",
+   "name": "Sticker Centre",
+   "what": "Manages keyboard stickers.",
+   "tier": "caution",
+   "breaks": "Stickers in the Samsung keyboard may disappear.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.spay",
+   "name": "Samsung Wallet",
+   "what": "Samsung Pay cards and passes.",
+   "tier": "caution",
+   "breaks": "Paying with Samsung Wallet stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.oneconnect",
+   "name": "SmartThings",
+   "what": "Smart-home control and device finding.",
+   "tier": "caution",
+   "breaks": "SmartThings devices cannot be controlled; SmartThings Find is affected.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.beaconmanager",
+   "name": "SmartThings nearby helper",
+   "what": "Finds nearby Samsung devices to connect.",
+   "tier": "caution",
+   "breaks": "Pop-ups for connecting nearby Samsung devices stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.forest",
+   "name": "Digital Wellbeing",
+   "what": "Screen-time tools and app timers.",
+   "tier": "caution",
+   "breaks": "App timers and Bedtime mode stop; the Settings entry breaks.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.rubin.app",
+   "name": "Customisation Service",
+   "what": "Learns your usage to personalise Samsung apps and ads.",
+   "tier": "caution",
+   "breaks": "Personalised suggestions in Samsung apps stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.mdx",
+   "name": "Link to Windows service",
+   "what": "Samsung's part of Phone Link.",
+   "tier": "caution",
+   "breaks": "Phone Link with a Windows PC stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.sharelive",
+   "name": "Quick Share",
+   "what": "Sends files to nearby devices.",
+   "tier": "caution",
+   "breaks": "Quick Share stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.da.daagent",
+   "name": "Dual Messenger",
+   "what": "Runs a second copy of chat apps.",
+   "tier": "caution",
+   "breaks": "Second copies of chat apps stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.dynamiclock",
+   "name": "Dynamic Lock screen",
+   "what": "Rotating lock-screen wallpapers.",
+   "tier": "caution",
+   "breaks": "Lock-screen wallpaper rotation stops.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.daemonapp",
+   "name": "Samsung Weather",
+   "what": "Weather app and widgets.",
+   "tier": "caution",
+   "breaks": "Weather widgets on the home and lock screen go blank.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.easyMover.Agent",
+   "name": "Smart Switch agent",
+   "what": "Helps move data from an old phone.",
+   "tier": "caution",
+   "breaks": "Smart Switch transfers may fail.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.smartswitchassistant",
+   "name": "Smart Switch assistant",
+   "what": "Helps move data from an old phone.",
+   "tier": "caution",
+   "breaks": "Smart Switch transfers may fail.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.svoiceime",
+   "name": "Samsung voice input",
+   "what": "Dictation in the Samsung keyboard.",
+   "tier": "caution",
+   "breaks": "The microphone button on the Samsung keyboard stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.galaxyfinder",
+   "name": "Finder",
+   "what": "Search across apps and settings.",
+   "tier": "caution",
+   "breaks": "The search bar in the app drawer stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.cocktailbarservice",
+   "name": "Edge panels",
+   "what": "The swipe-in panel at the screen edge.",
+   "tier": "caution",
+   "breaks": "Edge panels disappear.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.taskedge",
+   "name": "Tasks edge panel",
+   "what": "Shortcuts panel for Edge panels.",
+   "tier": "caution",
+   "breaks": "That Edge panel disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.clipboardedge",
+   "name": "Clipboard edge panel",
+   "what": "Clipboard panel for Edge panels.",
+   "tier": "caution",
+   "breaks": "That Edge panel disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.appsedge",
+   "name": "Apps edge panel",
+   "what": "App shortcuts panel for Edge panels.",
+   "tier": "caution",
+   "breaks": "That Edge panel disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.service.peoplestripe",
+   "name": "People edge panel",
+   "what": "Contacts panel for Edge panels.",
+   "tier": "caution",
+   "breaks": "That Edge panel disappears.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.sm.devicesecurity",
+   "name": "Device protection",
+   "what": "Malware scanner inside Device care.",
+   "tier": "caution",
+   "breaks": "The 'Device protection' scan in Settings stops working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.dsi.ant.service.socket",
+   "name": "ANT+ radio service",
+   "what": "Connects ANT+ fitness sensors.",
+   "tier": "caution",
+   "breaks": "ANT+ heart-rate straps and bike sensors will not connect.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.dsi.ant.plugins.antplus",
+   "name": "ANT+ plug-ins",
+   "what": "Connects ANT+ fitness sensors.",
+   "tier": "caution",
+   "breaks": "ANT+ heart-rate straps and bike sensors will not connect.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.dsi.ant.server",
+   "name": "ANT+ server",
+   "what": "Connects ANT+ fitness sensors.",
+   "tier": "caution",
+   "breaks": "ANT+ heart-rate straps and bike sensors will not connect.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.dsi.ant.sample.libraries",
+   "name": "ANT+ libraries",
+   "what": "Connects ANT+ fitness sensors.",
+   "tier": "caution",
+   "breaks": "ANT+ heart-rate straps and bike sensors will not connect.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.game.gos",
+   "name": "Game Optimizing Service",
+   "what": "Manages heat and performance in games.",
+   "tier": "risky",
+   "breaks": "Games may overheat the phone or run differently.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.samsungpass",
+   "name": "Samsung Pass",
+   "what": "Saved passwords and fingerprint sign-in.",
+   "tier": "risky",
+   "breaks": "Saved passwords and biometric sign-in to apps and sites stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.scloud",
+   "name": "Samsung Cloud",
+   "what": "Backup and sync of settings and data.",
+   "tier": "risky",
+   "breaks": "Samsung Cloud backup and sync stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.osp.app.signin",
+   "name": "Samsung account",
+   "what": "Your Samsung sign-in.",
+   "tier": "risky",
+   "breaks": "Samsung account features break: Find My Mobile, Galaxy Store, cloud, Pass.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.mobileservice",
+   "name": "Samsung Experience Service",
+   "what": "Shared background service for Samsung apps.",
+   "tier": "risky",
+   "breaks": "Sharing, Samsung account and several Samsung apps can break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.fmm",
+   "name": "Find My Mobile",
+   "what": "Locate, lock or erase a lost phone.",
+   "tier": "risky",
+   "breaks": "You cannot find or lock the phone if it is lost.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.contacts",
+   "name": "Samsung Contacts",
+   "what": "Contacts app.",
+   "tier": "risky",
+   "breaks": "Contacts and parts of the phone app may stop working.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.gallery3d",
+   "name": "Samsung Gallery",
+   "what": "Photo gallery.",
+   "tier": "risky",
+   "breaks": "The camera's preview button and photo pickers in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.myfiles",
+   "name": "My Files",
+   "what": "File manager.",
+   "tier": "risky",
+   "breaks": "Opening downloads and attaching files in other apps may break.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.app.camera",
+   "name": "Samsung Camera",
+   "what": "The camera app.",
+   "tier": "risky",
+   "breaks": "No camera app; quick-launch and lock-screen camera stop.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.dressroom",
+   "name": "Wallpaper and style",
+   "what": "Wallpaper picker.",
+   "tier": "risky",
+   "breaks": "You cannot change wallpaper; the Settings entry breaks.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.wssyncmldm",
+   "name": "Software update",
+   "what": "Downloads and installs system updates.",
+   "tier": "risky",
+   "breaks": "The phone stops receiving security and system updates.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.sec.android.soagent",
+   "name": "Software update agent",
+   "what": "Part of the system update process.",
+   "tier": "risky",
+   "breaks": "The phone may stop receiving security and system updates.",
+   "applies_to": "any"
+  },
+  {
+   "package": "com.samsung.android.app.omcagent",
+   "name": "Carrier configuration agent",
+   "what": "Applies your carrier's settings and apps.",
+   "tier": "risky",
+   "breaks": "Carrier features may be set up wrongly after a SIM change or update.",
+   "applies_to": "any"
+  }
+ ]
+}
