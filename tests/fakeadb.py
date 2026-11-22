@@ -188,7 +188,10 @@ class FakeDevice:
         if c == "pidof":
             return (self.systemui_pid + "\n") if self.systemui_pid else "", "", 0 if self.systemui_pid else 1
         if c == "settings":
-            return self.settings.get((a[2], a[3]), "null") + "\n", "", 0
+            value = self.settings.get((a[2], a[3]), "null")
+            if a[3] == "default_input_method" and not self.packages.get(value.split("/")[0], {"enabled": True})["enabled"]:
+                value = ""  # Android clears the setting when the keyboard app is switched off
+            return value + "\n", "", 0
         if c == "telecom":
             return self.outputs.get("telecom", "") , "", 0
         if c == "dumpsys":
@@ -290,7 +293,7 @@ class FakeDevice:
             if pkg in self.refuse_disable:
                 return "", "java.lang.SecurityException: Cannot disable a protected package: %s\n" % pkg, 255
             self.packages[pkg]["enabled"] = False
-            if pkg in self.break_on_disable or pkg == "com.android.systemui":
+            if pkg in self.break_on_disable:
                 self.systemui_pid = ""
             return "Package %s new state: disabled-user\n" % pkg, "", 0
         if a[1] == "enable" and a[2:4] == ["--user", "0"]:
@@ -307,6 +310,8 @@ class FakeDevice:
 
     def _cmd(self, a: List[str]):
         if a[1] == "package" and a[2] == "resolve-activity":
+            if self.launcher and not self.packages.get(self.launcher.split("/")[0], {"enabled": True})["enabled"]:
+                return "priority=0\ncom.android.settings/.FallbackHome\n", "", 0
             if not self.launcher:
                 return "No activity found\n", "", 0
             return "priority=0 preferredOrder=0 match=0x108000 specificIndex=-1 isDefault=true\n%s\n" % self.launcher, "", 0

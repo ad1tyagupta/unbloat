@@ -112,13 +112,13 @@ def _inspect_packages(
     for pkg in batch["packages"]:
         know = lookup(pkg, family)
         row: Dict[str, Any] = {"package": pkg, "name": know["name"], "tier": know["tier"], "breaks": know["breaks"]}
-        if pkg not in packages:
+        if know["tier"] == "never":
+            row.update(action="refuse")
+            refusals.append("%s can never be switched off: %s" % (pkg, know["breaks"] or know["what"]))
+        elif pkg not in packages:
             row.update(action="skip", why="not installed on this phone")
         elif not packages[pkg]["enabled"]:
             row.update(action="skip", why="already switched off")
-        elif know["tier"] == "never":
-            row.update(action="refuse")
-            refusals.append("%s can never be switched off: %s" % (pkg, know["breaks"] or know["what"]))
         elif pkg in protected:
             row.update(action="refuse")
             refusals.append("%s cannot be switched off because %s" % (pkg, protected[pkg]))
@@ -254,7 +254,16 @@ def _delete_batch(
                 digest = sha256_file(local)
                 with open(manifest, "a", encoding="utf-8") as fh:
                     fh.write(json.dumps({"phone_path": path, "local": local, "size": f["size"], "sha256": digest}) + "\n")
-            gone = delete_file(adb, path)
+            try:
+                gone = delete_file(adb, path)
+            except AdbError:
+                # The connection dropped mid-delete. Record it, so the report
+                # and the backup manifest still account for this file.
+                journal.record(
+                    "delete", ["shell", "rm", path], "unconfirmed", path=path, size=f["size"],
+                    batch=view["id"], category=view["category"], backup=local, sha256=digest,
+                )
+                raise
             journal.record(
                 "delete",
                 ["shell", "rm", path],
@@ -317,20 +326,61 @@ def _systemui_pid(adb: Adb) -> str:
     return adb.shell_text(["pidof", "com.android.systemui"]).strip()
 
 
-def health_check(adb: Adb, pid_before: str, sleep: Callable[[float], None]) -> Optional[str]:
-    """None if the phone looks healthy, otherwise what is wrong."""
+_HOME_QUERY = ["cmd", "package", "resolve-activity", "--brief", "-a", "android.intent.action.MAIN",
+               "-c", "android.intent.category.HOME"]
+
+
+def health_baseline(adb: Adb) -> Dict[str, Any]:
+    """What a healthy phone looks like right now, before a group is switched off."""
+    defaults = read_defaults(adb)
+    return {
+        "pid": _systemui_pid(adb),
+        "keyboard_set": bool(defaults.get("keyboard")),
+        "needed": {
+            p for p in [defaults.get("launcher"), defaults.get("keyboard")]
+            + list(defaults.get("dialer") or []) + list(defaults.get("sms") or []) if p
+        },
+    }
+
+
+def health_check(adb: Adb, baseline: Dict[str, Any], group: Sequence[str], sleep: Callable[[float], None]) -> Optional[str]:
+    """None if the phone looks healthy, otherwise what is wrong.
+
+    A switched-off app's process can keep running until the phone restarts
+    (seen with SystemUI on an Android 10 emulator), so "is it still running"
+    is not enough. This also checks that the phone still has a home screen,
+    a keyboard, and its phone and messages apps.
+    """
     try:
+        booted = pid = ""
         for attempt in range(3):
             sleep(3 if attempt == 0 else 2)
             booted = adb.shell_text(["getprop", "sys.boot_completed"]).strip()
             pid = _systemui_pid(adb)
             if booted == "1" and pid:
-                if pid_before and pid != pid_before:
-                    return "the phone's screen software restarted"
-                return None
+                break
         if booted != "1":
             return "the phone is no longer reporting that it has finished starting up"
-        return "the phone's screen software stopped running"
+        if not pid:
+            return "the phone's screen software stopped running"
+        if baseline.get("pid") and pid != baseline["pid"]:
+            return "the phone's screen software restarted"
+        off = disabled_packages(adb)
+        if "com.android.systemui" in off:
+            return "the phone's screen software was switched off"
+        core = [p for p in group if p in off and lookup(p, "")["tier"] == "never"]
+        if core:
+            return "a core part of Android (%s) was switched off" % ", ".join(core)
+        lost = sorted(p for p in baseline.get("needed", ()) if p in off)
+        if lost:
+            return "an app the phone relies on (%s) is now off" % ", ".join(lost)
+        if "FallbackHome" in adb.shell_text(_HOME_QUERY):
+            return "the phone no longer has a working home screen"
+        if baseline.get("keyboard_set"):
+            kb = adb.shell_text(["settings", "get", "secure", "default_input_method"]).strip()
+            if not kb or kb == "null":
+                return "the phone no longer has a keyboard selected"
+        return None
     except AdbError as exc:
         return "the phone stopped answering (%s)" % exc.message
 
@@ -341,14 +391,14 @@ def _disable_batch(
     todo = [r["package"] for r in view["packages"] if r["action"] == "disable"]
     disabled: List[str] = []
     refused: List[str] = []
-    pid_before = _systemui_pid(adb)
     for start in range(0, len(todo), DISABLE_GROUP):
         group = todo[start:start + DISABLE_GROUP]
+        baseline = health_baseline(adb)
         for pkg in group:
             cmd = ["pm", "disable-user", "--user", "0", pkg]
             journal.record("disable", ["shell"] + cmd, "attempted", package=pkg, batch=view["id"], was_enabled=True)
             adb.shell(cmd, retry=False)
-        problem = health_check(adb, pid_before, sleep)
+        problem = health_check(adb, baseline, group, sleep)
         if problem:
             undone = []
             for pkg in group:
@@ -423,7 +473,7 @@ def run_apply(
 
     unbacked = [v["id"] for v in views if v["kind"] == "delete_files" and not v["backup"]]
     backup_bytes = sum(v["size"] for v in views if v["kind"] == "delete_files" and v["backup"])
-    ws = Workspace(workdir, serial)
+    ws = Workspace.for_device(workdir, adb)
     disk_free = free_disk(ws.base)
     data: Dict[str, Any] = {
         "plan": os.path.abspath(plan_file),

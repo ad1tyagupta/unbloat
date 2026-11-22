@@ -177,7 +177,14 @@ def run_photos(
         notes.append("%d images are in a format (such as HEIC or RAW) that could not be opened here and were skipped." % skipped_format)
     if len(images) - skipped_format > limit:
         notes.append("Only the newest %d photos were looked at (raise --limit to see more)." % limit)
-    ws = Workspace(workdir, str(info["serial"]))
+    copy_size = sum(int(f["size"]) for f in todo)
+    data["copied_to_computer"] = copy_size
+    notes.append(
+        "Android has no way to hand over small previews without an app on the phone, so each photo "
+        "looked at is copied in full (%s for %d photos), shrunk on the computer, and the full copy "
+        "thrown away." % (human(copy_size), len(todo))
+    )
+    ws = Workspace.for_device(workdir, adb)
     out_dir = ws.dir("photos", stamp())
     thumbs = os.path.join(out_dir, "thumbs")
     os.makedirs(thumbs, exist_ok=True)

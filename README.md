@@ -95,13 +95,24 @@ adb shell pm enable --user 0 <package>         # switch one app back on
 
 ## What has been tested
 
-Tested on Android emulators (Google's virtual phones) running Android 8.0, 10 and 14: scanning, deleting files with awkward names after a verified backup, clearing caches, switching apps off and back on, and refusing unsafe plans. The automated tests replay output captured from those emulators.
+Tested on Android emulators (Google's virtual phones) running Android 8.0, 10 and 14:
 
-**Not yet tested on a real phone of any brand.** The bloatware lists for Samsung, Xiaomi, Oppo/realme/OnePlus, Vivo, Motorola, Pixel and Nothing are written from general knowledge, not checked on those phones, so they are deliberately cautious. Reports from real devices are very welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
+- every command, start to finish: scanning, picking, dry run, deleting files after a verified backup, clearing caches, switching apps off and back on, report and restore;
+- file names with quotes, `;`, `$()`, backticks, spaces, non-Latin letters and emoji (and, on Android 8 and 10, newlines, `*`, `?`, `|` and `\`, which Android 11 and later do not allow at all);
+- refusing unsafe plans, edited plans and wrong approval codes;
+- the cable being pulled in the middle of deleting, then carrying on;
+- switching off a core app on purpose (bypassing the block list in a test) to check the automatic undo;
+- a work profile being detected and left alone;
+- 20,000 files (scan took about 3 seconds; deleting 2,000 files with backups took about 4 minutes);
+- reconnecting the same phone over the network after using USB.
+
+The automated tests replay output captured from those emulators and run on macOS, Linux and Windows.
+
+**Not yet tested on a real phone of any brand**, and not tested: Wi-Fi pairing with a pairing code, Windows with a real phone, or phones with tens of thousands of photos. The bloatware lists for Samsung, Xiaomi, Oppo/realme/OnePlus, Vivo, Motorola, Pixel and Nothing are written from general knowledge, not checked on those phones, so they are deliberately cautious. Reports from real devices are very welcome: see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## FAQ
 
-**Will I lose my WhatsApp chats?** No. unbloat can remove media files WhatsApp saved to shared storage (if you approve), never the chats, which live in WhatsApp's private storage.
+**Will I lose my WhatsApp chats?** No. unbloat can remove media files WhatsApp saved to shared storage (if you approve). It never touches the chats themselves, and it refuses to delete the chat backup files WhatsApp, Signal, Telegram and Viber keep in shared storage.
 
 **Is clearing caches safe?** Yes. It asks Android to clear temporary files apps can rebuild. Logins and app data are not touched. Apps may load a bit slower the first time.
 

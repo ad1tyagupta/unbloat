@@ -61,7 +61,10 @@ class Paths(unittest.TestCase):
             ROOT + "/../0/x", ROOT + "/a/../../../data/x", ROOT + "/./a", ROOT + "//a", ROOT + "/a/",
             "/storage/emulated/10/Download/a", "/storage/emulated/0x/a", "/sdcardx/a", ROOT + "/a\x00b",
             ROOT + "/Android/data/com.x/cache/a", ROOT + "/android/DATA/com.x/a", ROOT + "/Android/obb/com.x/a.obb",
-            "/storage/ABCD-1234/DCIM/a.jpg", None, 5, ["/sdcard/a"], ROOT + "/" + "a" * 5000,
+            "/storage/ABCD-1234/DCIM/a.jpg", ROOT + "/WhatsApp/Databases/msgstore.db.crypt14",
+            ROOT + "/Android/media/com.whatsapp/WhatsApp/Databases/msgstore-2026-11-01.1.db.crypt14",
+            ROOT + "/Android/media/com.whatsapp.w4b/WhatsApp Business/Backups/wa.db.crypt14",
+            ROOT + "/whatsapp/DATABASES/x", ROOT + "/Signal/Backups/signal-2026.backup", None, 5, ["/sdcard/a"], ROOT + "/" + "a" * 5000,
         ]
         for p in bad:
             with self.assertRaises(PathRejected, msg=repr(p)):
@@ -123,6 +126,18 @@ class DeviceFacts(unittest.TestCase):
         self.assertEqual(info["sdk"], 34)
         self.assertEqual(len(info["other_users"]), 1)
         self.assertTrue(any("leaves the others alone" in n for n in info["notes"]))
+
+    def test_record_folder_key(self):
+        from unbloat.workspace import device_key
+        dev = FakeDevice()
+        self.assertEqual(device_key(dev.adb()), "FAKE123")  # no serial property: connection name
+        dev.props["ro.serialno"] = "R58N12ABCDE"
+        self.assertEqual(device_key(dev.adb()), "R58N12ABCDE")
+        dev.props["ro.serialno"] = "EMULATOR37X2X13X0"  # shared by every emulator
+        self.assertEqual(device_key(dev.adb()), "FAKE123")
+        dev.props["ro.serialno"] = "unknown"
+        dev.props["ro.boot.serialno"] = "ABC123"
+        self.assertEqual(device_key(dev.adb()), "ABC123")
 
     def test_probe_tools_detects_missing_features(self):
         dev = FakeDevice()

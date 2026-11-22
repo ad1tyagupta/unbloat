@@ -15,5 +15,7 @@ Report through GitHub's private vulnerability reporting on this repository (Secu
 - The host never runs a shell. `adb` is called with an argument list.
 - Every argument sent to the phone's shell is wrapped in single quotes (`unbloat/quoting.py`), tested against hostile names on Android 8, 10 and 14 emulators.
 - Paths are checked twice: as text (`unbloat/paths.py`), then on the phone just before acting (exact type, size, modified time, and that the path resolves to itself).
+- Chat history backups in shared storage (WhatsApp, Signal, Telegram, Viber) are never deleted.
+- After each small group of apps is switched off, the phone is checked for a working home screen, keyboard, phone app, messages app and screen software; any failure switches the group back on and stops.
 - The only state-changing package command is `pm disable-user --user 0`, undone with `pm enable --user 0`.
 - Text from the phone is escaped before display (`unbloat/util.py:show`) and treated as data.

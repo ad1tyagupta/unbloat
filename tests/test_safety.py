@@ -89,6 +89,21 @@ class Debloat(Base):
             text = self.refused(self.pkgs(pkg, user_named=[pkg], caution_explained=True), "can never be switched off")
             self.assertIn(pkg, text)
 
+    def test_never_list_refused_even_when_not_installed(self):
+        self.refused(self.pkgs("com.android.vending"), "can never be switched off")
+
+    def test_records_follow_the_phone_not_the_connection(self):
+        self.dev.props["ro.serialno"] = "HW-SERIAL-1"
+        self.dev.add_package("com.facebook.katana")
+        path, doc = self.plan(self.pkgs("com.facebook.katana"))
+        self.apply(path, doc)
+        wifi = FakeDevice(serial="192.168.1.5:5555")
+        wifi.props["ro.serialno"] = "HW-SERIAL-1"
+        wifi.packages = self.dev.packages
+        res = run_restore(wifi.adb(), self.work, dry_run=False)
+        self.assertEqual(res["switched_on"], ["com.facebook.katana"])
+        self.assertTrue(os.path.isdir(os.path.join(self.work, "HW-SERIAL-1")))
+
     def test_case_tricks_do_not_dodge_the_denylist(self):
         self.assertIsNotNone(denied("COM.Android.SystemUI"))
         self.assertIsNotNone(denied("com.Google.Android.GMS"))
@@ -183,6 +198,41 @@ class Debloat(Base):
         self.assertEqual(r["rolled_back"], names[:5])
         self.assertTrue(all(self.dev.packages[p]["enabled"] for p in names), "group re-enabled, later group never touched")
         self.assertEqual(run_restore(self.adb, self.work)["to_switch_on"], [])
+
+    def test_health_check_catches_breakage_that_leaves_processes_running(self):
+        """Bypass every earlier check and call the disable step directly, as if a
+        bug let a dangerous package through. The health check must still catch it."""
+        from unbloat.apply import _disable_batch
+        from unbloat.journal import Journal
+        cases = {
+            "com.android.systemui": "screen software was switched off",
+            "com.google.android.apps.nexuslauncher": "switched back on",
+            "com.google.android.inputmethod.latin": "relies on",
+            "com.google.android.dialer": "relies on",
+            "com.google.android.apps.messaging": "relies on",
+            "com.google.android.gms": "core part of Android",
+        }
+        for pkg, needle in cases.items():
+            with self.subTest(pkg=pkg):
+                dev = FakeDevice()
+                adb = dev.adb()
+                j = Journal(os.path.join(self.tmp.name, "j-%s.jsonl" % pkg), "FAKE123")
+                view = {"id": "b", "packages": [{"package": "com.android.egg", "action": "disable"}, {"package": pkg, "action": "disable"}]}
+                r = _disable_batch(adb, j, view, lambda s: None, lambda m: None)
+                self.assertIn(needle, r.get("stopped", ""))
+                self.assertTrue(dev.packages[pkg]["enabled"] and dev.packages["com.android.egg"]["enabled"])
+
+    def test_health_check_catches_lost_home_screen_and_keyboard_signals(self):
+        from unbloat.apply import health_check, health_baseline
+        dev = FakeDevice()
+        adb = dev.adb()
+        base = health_baseline(adb)
+        base["needed"] = set()  # pretend we could not tell which apps were the defaults
+        dev.packages["com.google.android.apps.nexuslauncher"]["enabled"] = False
+        self.assertIn("home screen", health_check(adb, base, [], lambda s: None))
+        dev.packages["com.google.android.apps.nexuslauncher"]["enabled"] = True
+        dev.packages["com.google.android.inputmethod.latin"]["enabled"] = False
+        self.assertIn("keyboard", health_check(adb, base, [], lambda s: None))
 
     def test_phone_refusing_a_disable_is_reported_not_claimed(self):
         for p in ("com.facebook.katana", "com.facebook.appmanager"):
@@ -361,20 +411,35 @@ class Storage(Base):
             self.dev.add_file(f, f.encode())
         path, doc = self.plan(self.files(*files))
         self.dev.calls = 0
-        self.dev.offline_after = 60
+        self.dev.offline_after = self.drop_at
         with self.assertRaises(Interrupted):
             self.apply(path, doc)
         left = len(self.dev.files)
-        self.assertTrue(0 < left < 30)
+        self.assertTrue(0 <= left <= 30)
         journal = read_journal(os.path.join(self.work, "FAKE123", "journal.jsonl"))
-        ok = [e for e in journal if e["action"] == "delete" and e["result"] == "ok"]
-        self.assertEqual(len(ok), 30 - left)
+        ok = [e for e in journal if e["action"] == "delete" and e["result"] in ("ok", "unconfirmed")]
+        self.assertGreaterEqual(len(ok), 30 - left)
+        self.assertLessEqual(len(ok), 30 - left + 1)
         for e in ok:
             self.assertTrue(os.path.isfile(e["backup"]), "every deleted file has its verified copy")
         self.dev.offline_after = None
         out = self.apply(path, doc)
         self.assertEqual(out["batches"][0]["result"]["deleted"], left)
         self.assertEqual(self.dev.files, {})
+
+    drop_at = 60
+
+    def test_dropped_connection_at_many_points(self):
+        for n in range(30, 140, 7):
+            with self.subTest(drop_at=n):
+                self.setUp()
+                self.drop_at = n
+                try:
+                    self.test_dropped_connection_stops_cleanly_and_can_resume()
+                except AssertionError as e:
+                    if "Interrupted not raised" in str(e):
+                        continue  # finished before the drop point
+                    raise
 
     def test_stale_gallery_entries_are_cleared(self):
         a = ROOT + "/DCIM/Camera/it's.jpg"

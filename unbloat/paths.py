@@ -46,6 +46,19 @@ MESSAGING_MARKERS = (
     "pictures/discord",
 )
 
+# Chat history backups that live in shared storage. Deleting them can lose
+# years of messages if the user has no cloud backup, so they are never
+# deleted by unbloat. Matched case-insensitively anywhere in the path.
+_CHAT_BACKUPS = (
+    "whatsapp/databases/",
+    "whatsapp business/databases/",
+    "whatsapp/backups/",
+    "whatsapp business/backups/",
+    "signal/backups/",
+    "telegram/telegram files/backups/",
+    "viber/backups/",
+)
+
 MAX_PATH_LEN = 4000
 
 
@@ -89,6 +102,9 @@ def normalize_remote(path: object) -> str:
     for prot in _PROTECTED:
         if low == prot or low.startswith(prot + "/"):
             raise PathRejected("path is inside app-private storage (Android/data or Android/obb)")
+    for marker in _CHAT_BACKUPS:
+        if ("/" + low).find("/" + marker) != -1:
+            raise PathRejected("path is a chat history backup (unbloat never deletes these)")
     return ROOT + "/" + rel
 
 

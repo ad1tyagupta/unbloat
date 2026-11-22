@@ -61,7 +61,7 @@ def run_pick(
     no_backup: bool = False,
 ) -> Dict[str, Any]:
     serial = adb.require_serial()
-    ws = Workspace(workdir, serial)
+    ws = Workspace.for_device(workdir, adb)
     plan = _load_or_new(plan_file, serial)
     already = {
         f.get("path") for b in plan["batches"] if isinstance(b, dict) and b.get("kind") == "delete_files"

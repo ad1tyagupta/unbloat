@@ -21,7 +21,7 @@ def scan_packages(adb: Adb, workdir: Optional[str] = None) -> Dict[str, Any]:
     packages = list_packages(adb)
     defaults = read_defaults(adb)
     protected = protected_by_defaults(defaults)
-    ws = Workspace(workdir, str(info["serial"]))
+    ws = Workspace.for_device(workdir, adb)
     ours = disabled_by_us(read_journal(ws.journal_path))
     rows: List[Dict[str, Any]] = []
     for name, st in sorted(packages.items()):

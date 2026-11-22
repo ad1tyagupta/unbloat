@@ -101,7 +101,7 @@ python -m unbloat photos --json                                    # local pre-p
 python -m unbloat photos --i-understand-images-go-to-my-ai-provider --json
 ```
 
-The pre-pass finds exact duplicates, and with Pillow installed (`python -m pip install Pillow`) near-identical shots and possibly blurry ones. Contact sheets show only those candidates, numbered so you can map each picture back to its path. A low blur score can also mean a plain subject, so look before suggesting anything. Photos to remove go into a plan like any other files, with the user having seen them.
+Before the pre-pass, tell the user it copies each photo it looks at to the computer in full (only small previews are kept), so a large camera folder takes a while; `--limit` caps how many. The pre-pass finds exact duplicates, and with Pillow installed (`python -m pip install Pillow`) near-identical shots and possibly blurry ones. Contact sheets show only those candidates, numbered so you can map each picture back to its path. A low blur score can also mean a plain subject, so look before suggesting anything. Photos to remove go into a plan like any other files, with the user having seen them.
 
 ### 7. Debloat, only if they asked
 

@@ -16,7 +16,7 @@ from .workspace import Workspace, read_json
 
 def run_report(adb: Adb, workdir: Optional[str] = None) -> Dict[str, Any]:
     serial = adb.require_serial()
-    ws = Workspace(workdir, serial)
+    ws = Workspace.for_device(workdir, adb)
     entries = read_journal(ws.journal_path)
     by_cat: Dict[str, Dict[str, int]] = defaultdict(lambda: {"files": 0, "bytes": 0})
     trimmed = 0

@@ -26,6 +26,16 @@ class Workspace:
         self.serial = serial
         self.root = os.path.join(self.base, safe_name(serial))
 
+    @classmethod
+    def for_device(cls, base: Optional[str], adb: Any) -> "Workspace":
+        """The folder for the phone itself, not for the connection.
+
+        One phone can show up as 'R58N...' over USB and '192.168.1.5:5555'
+        over Wi-Fi. Records are filed under the phone's own serial number so
+        `restore` finds them whichever way it is connected.
+        """
+        return cls(base, device_key(adb))
+
     def dir(self, *parts: str) -> str:
         path = os.path.join(self.root, *parts)
         os.makedirs(path, exist_ok=True)
@@ -66,3 +76,24 @@ class Workspace:
 def read_json(path: str) -> Any:
     with open(path, "r", encoding="utf-8") as fh:
         return json.load(fh)
+
+
+def device_key(adb: Any) -> str:
+    serial = adb.require_serial()
+    cache = getattr(adb, "_device_keys", None)
+    if cache is None:
+        cache = {}
+        adb._device_keys = cache
+    if serial not in cache:
+        key = ""
+        for prop in ("ro.serialno", "ro.boot.serialno"):
+            try:
+                key = adb.shell_text(["getprop", prop]).strip()
+            except Exception:
+                key = ""
+            # Emulators all share one made-up serial, so they keep the connection name.
+            if key and key.lower() not in ("unknown", "0123456789abcdef") and not key.upper().startswith("EMULATOR"):
+                break
+            key = ""
+        cache[serial] = key or serial
+    return cache[serial]

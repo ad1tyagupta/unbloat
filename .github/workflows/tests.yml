@@ -18,6 +18,10 @@ jobs:
         os: [ubuntu-latest, macos-latest, windows-latest]
         python: ["3.9", "3.13"]
         pillow: [false]
+        exclude:
+          # GitHub's newest Ubuntu images no longer ship Python 3.9; 3.9 is still covered on macOS and Windows.
+          - os: ubuntu-latest
+            python: "3.9"
         include:
           - os: ubuntu-latest
             python: "3.13"
@@ -26,8 +30,8 @@ jobs:
             python: "3.13"
             pillow: true
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: ${{ matrix.python }}
       - name: Install Pillow
@@ -51,8 +55,8 @@ jobs:
       matrix:
         api: [29, 34]
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-python@v5
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Enable KVM

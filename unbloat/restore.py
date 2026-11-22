@@ -34,7 +34,7 @@ def disabled_by_us(entries: List[Dict[str, Any]]) -> List[str]:
 
 def run_restore(adb: Adb, workdir: Optional[str] = None, dry_run: bool = True) -> Dict[str, Any]:
     serial = adb.require_serial()
-    ws = Workspace(workdir, serial)
+    ws = Workspace.for_device(workdir, adb)
     ours = disabled_by_us(read_journal(ws.journal_path))
     off_now = disabled_packages(adb)
     todo = [p for p in reversed(ours) if p in off_now]

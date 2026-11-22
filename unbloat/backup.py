@@ -36,7 +36,7 @@ def take_snapshot(adb: Adb, ws: Workspace) -> Dict[str, Any]:
 
 
 def run_backup(adb: Adb, workdir: Optional[str] = None) -> Dict[str, Any]:
-    ws = Workspace(workdir, adb.require_serial())
+    ws = Workspace.for_device(workdir, adb)
     snap = take_snapshot(adb, ws)
     pk = snap["packages"]
     return {
