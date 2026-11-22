@@ -140,6 +140,8 @@ class FakeDevice:
         text = cmd[1]
         if self.timeout_on and self.timeout_on in text:
             raise AdbTimeout("The phone did not answer in time.", "")
+        if text.startswith("p='"):
+            return self._delete_script(argv, text)
         if text.startswith("for t in "):
             return Result(argv, 0, ("\n".join(sorted(self.tools)) + "\n").encode(), b"")
         parts = shlex.split(text)
@@ -148,6 +150,21 @@ class FakeDevice:
         if isinstance(out, str):
             out = out.encode("utf-8", "surrogateescape")
         return Result(argv, code, out, err.encode())
+
+    def _delete_script(self, argv, text):
+        # p=<quoted path>; if [ -f ... ] && [ "$(realpath ...)" = "$p" ]; then rm ...
+        first = shlex.split(text.split("; if [ -f", 1)[0])
+        assert len(first) == 1 and first[0].startswith("p="), text
+        path = first[0][2:]
+        self.log.append(["rm", path])
+        out = []
+        real = self._resolve(path)
+        if path in self.symlinks or real != path or path not in self.files:
+            out.append("UNBLOAT_REFUSED")
+        elif path not in self.undeletable:
+            del self.files[path]
+        out.append("UNBLOAT_PRESENT" if (path in self.files or path in self.symlinks) else "UNBLOAT_GONE")
+        return Result(argv, 0, ("\n".join(out) + "\n").encode("utf-8", "surrogateescape"), b"")
 
     def _pull(self, argv: List[str], remote: str, local: str) -> Result:
         remote = self._resolve(remote)

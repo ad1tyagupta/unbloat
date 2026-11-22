@@ -30,13 +30,25 @@ def parse_installers(text: str) -> Dict[str, Optional[str]]:
     return out
 
 
+def _strict(adb: Adb, args: List[str], timeout: float = 90) -> str:
+    """Output of a read the safety checks depend on. A failed read raises,
+    so a check can never quietly pass on an empty answer."""
+    res = adb.shell(args, timeout=timeout)
+    if res.code != 0:
+        raise AdbError(
+            "The phone did not answer '%s' properly, so nothing was changed." % " ".join(args[:4]),
+            "Unlock the phone and try again.",
+        )
+    return res.text
+
+
 def list_packages(adb: Adb) -> Dict[str, Dict[str, object]]:
     """package -> {system, enabled, installer} for the main user."""
     all_names = _names(adb.shell_text(["pm", "list", "packages", "--user", "0"], timeout=90))
     if not all_names:
         raise AdbError("The phone did not return its app list.", "Unlock the phone and try again.")
-    system = set(_names(adb.shell_text(["pm", "list", "packages", "-s", "--user", "0"], timeout=90)))
-    disabled = set(_names(adb.shell_text(["pm", "list", "packages", "-d", "--user", "0"], timeout=90)))
+    system = set(_names(_strict(adb, ["pm", "list", "packages", "-s", "--user", "0"])))
+    disabled = disabled_packages(adb)
     installers = parse_installers(adb.shell_text(["pm", "list", "packages", "-i", "--user", "0"], timeout=90))
     return {
         name: {"system": name in system, "enabled": name not in disabled, "installer": installers.get(name)}
@@ -45,7 +57,7 @@ def list_packages(adb: Adb) -> Dict[str, Dict[str, object]]:
 
 
 def disabled_packages(adb: Adb) -> set:
-    return set(_names(adb.shell_text(["pm", "list", "packages", "-d", "--user", "0"], timeout=90)))
+    return set(_names(_strict(adb, ["pm", "list", "packages", "-d", "--user", "0"])))
 
 
 def _component_pkg(text: str) -> Optional[str]:
@@ -158,13 +170,13 @@ def read_defaults(adb: Adb) -> Dict[str, object]:
     if not sms:
         s = _component_pkg(_setting(adb, "secure", "sms_default_application"))
         sms = [s] if s else []
-    acc_raw = _setting(adb, "secure", "enabled_accessibility_services")
+    acc_raw = _strict(adb, ["settings", "get", "secure", "enabled_accessibility_services"]).strip()
     accessibility = []
     for item in acc_raw.split(":"):
         pkg = _component_pkg(item)
         if pkg and pkg not in accessibility:
             accessibility.append(pkg)
-    admins = parse_device_admins(adb.shell_text(["dumpsys", "device_policy"], timeout=60))
+    admins = parse_device_admins(_strict(adb, ["dumpsys", "device_policy"], timeout=60))
     return {
         "launcher": launcher,
         "launcher_candidates": launchers,

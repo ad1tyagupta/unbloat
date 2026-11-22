@@ -211,8 +211,8 @@ def _delete_batch(
     ready: List[Dict[str, Any]] = view["_ready"]
     backup: bool = view["backup"]
     tool = pick_hash_tool(tools)
-    taken: set = set()
     manifest = os.path.join(folder, "manifest.jsonl")
+    taken: set = {manifest.lower()}  # a phone file named manifest.jsonl must not land on the manifest
     deleted: List[str] = []
     freed = 0
     failed: List[Dict[str, str]] = []
@@ -255,7 +255,7 @@ def _delete_batch(
                 with open(manifest, "a", encoding="utf-8") as fh:
                     fh.write(json.dumps({"phone_path": path, "local": local, "size": f["size"], "sha256": digest}) + "\n")
             try:
-                gone = delete_file(adb, path)
+                gone = delete_file(adb, tools, path)
             except AdbError:
                 # The connection dropped mid-delete. Record it, so the report
                 # and the backup manifest still account for this file.
@@ -394,10 +394,22 @@ def _disable_batch(
     for start in range(0, len(todo), DISABLE_GROUP):
         group = todo[start:start + DISABLE_GROUP]
         baseline = health_baseline(adb)
-        for pkg in group:
-            cmd = ["pm", "disable-user", "--user", "0", pkg]
-            journal.record("disable", ["shell"] + cmd, "attempted", package=pkg, batch=view["id"], was_enabled=True)
-            adb.shell(cmd, retry=False)
+        try:
+            for pkg in group:
+                cmd = ["pm", "disable-user", "--user", "0", pkg]
+                journal.record("disable", ["shell"] + cmd, "attempted", package=pkg, batch=view["id"], was_enabled=True)
+                adb.shell(cmd, retry=False)
+        except AdbError:
+            # Connection lost part-way through a group: try to undo the group
+            # before giving up, since it never got its health check.
+            for pkg in group:
+                cmd = ["pm", "enable", "--user", "0", pkg]
+                try:
+                    adb.shell(cmd, retry=False)
+                    journal.record("enable", ["shell"] + cmd, "ok", package=pkg, reason="rollback")
+                except AdbError:
+                    journal.record("enable", ["shell"] + cmd, "failed", package=pkg, reason="rollback")
+            raise
         problem = health_check(adb, baseline, group, sleep)
         if problem:
             undone = []
@@ -539,7 +551,8 @@ def run_apply(
         raise Interrupted(
             "Stopped part-way: %s Everything done so far is recorded." % exc.message,
             "Reconnect and unlock the phone, then run the same apply command again to carry on. "
-            "Files are only ever deleted after their copy is verified, so nothing is half-done.",
+            "Files are only ever deleted after their copy is verified, so nothing is half-done. "
+            "If apps were being switched off, run 'restore' first to switch them back on.",
         )
     journal.record("plan_end", None, "ok", plan=data["plan"])
     data["free_before"] = space_before["free"] if space_before else None

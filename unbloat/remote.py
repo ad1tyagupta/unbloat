@@ -10,6 +10,7 @@ from typing import Callable, Dict, List, Optional, Sequence
 
 from .adb import Adb
 from .paths import ROOT, PathRejected
+from .quoting import sh_quote
 
 # Keep each shell command short. Old phones and old adb versions have small
 # limits on command length.
@@ -165,7 +166,24 @@ def verify_deletable(adb: Adb, tools: Dict[str, bool], path: str) -> Dict[str, o
     return info
 
 
-def delete_file(adb: Adb, path: str) -> bool:
-    """Delete one exact file. True only if the phone confirms it is gone."""
-    adb.shell(["rm", path], retry=False)
-    return stat_one(adb, path) is None
+_DELETE = (
+    'p={path}; '
+    'if [ -f "$p" ] && [ ! -L "$p" ] && [ "$({resolve} "$p")" = "$p" ]; then rm "$p"; else echo UNBLOAT_REFUSED; fi; '
+    'if [ -e "$p" ] || [ -L "$p" ]; then echo UNBLOAT_PRESENT; else echo UNBLOAT_GONE; fi'
+)
+
+
+def delete_file(adb: Adb, tools: Dict[str, bool], path: str) -> bool:
+    """Delete one exact file. True only if the phone confirms it is gone.
+
+    The location check and the delete run in one phone command, so the path
+    cannot be swapped for a link between checking and deleting. The path is
+    quoted with sh_quote; nothing else in the script comes from the phone.
+    """
+    resolve = "realpath" if tools.get("realpath") else ("readlink -f" if tools.get("readlink") else None)
+    if resolve is None:
+        return False
+    script = _DELETE.format(path=sh_quote(path), resolve=resolve)
+    res = adb.device(["shell", script], retry=False)
+    out = res.text.split()
+    return "UNBLOAT_GONE" in out and "UNBLOAT_REFUSED" not in out

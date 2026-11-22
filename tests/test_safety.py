@@ -342,6 +342,82 @@ class Storage(Base):
         self.assertEqual(sorted(c[1] for c in rms), sorted(ROOT + "/Download/n/" + n for n in NASTY))
         self.assertTrue(all(len(c) == 2 for c in rms))
 
+    def test_file_named_manifest_does_not_clobber_the_manifest(self):
+        a = ROOT + "/manifest.jsonl"
+        self.dev.add_file(a, b"phone data, not a manifest")
+        path, doc = self.plan(self.files(a))
+        r = self.apply(path, doc)["batches"][0]["result"]
+        with open(os.path.join(r["backup_folder"], "manifest.jsonl")) as fh:
+            entry = json.loads(fh.readline())
+        with open(entry["local"], "rb") as fh:
+            self.assertEqual(fh.read(), b"phone data, not a manifest")
+
+    def test_swap_to_symlink_after_checks_is_refused_at_delete(self):
+        import unbloat.apply as ap
+        a = ROOT + "/Download/a.bin"
+        self.dev.add_file(a, b"A" * 10)
+        self.dev.add_file("/data/secret/x.bin", b"S")
+        real_hash = ap.hash_many
+
+        def swap_then_hash(*args, **kw):
+            out = real_hash(*args, **kw)
+            self.dev.symlinks[a] = "/data/secret/x.bin"  # swapped after the checks
+            return out
+
+        ap.hash_many = swap_then_hash
+        try:
+            path, doc = self.plan(self.files(a))
+            r = self.apply(path, doc)["batches"][0]["result"]
+        finally:
+            ap.hash_many = real_hash
+        self.assertEqual(r["deleted"], 0)
+        self.assertIn("/data/secret/x.bin", self.dev.files)
+
+    def test_failed_reads_fail_closed(self):
+        self.dev.add_package("com.facebook.katana")
+        orig = self.dev._pm
+
+        def broken(a):
+            if a[1:4] == ["list", "packages", "-d"]:
+                return "", "Error: transaction failed\n", 1
+            return orig(a)
+
+        self.dev._pm = broken
+        path, doc = self.plan(self.pkgs("com.facebook.katana"))
+        from unbloat.adb import AdbError
+        with self.assertRaises(AdbError):
+            self.apply(path, doc)
+        self.assertTrue(self.dev.packages["com.facebook.katana"]["enabled"])
+        self.dev._pm = orig
+        self.dev.outputs.pop("device_policy")
+        orig_shell = self.dev._shell
+        self.dev._shell = lambda a: ("", "Can't find service\n", 1) if a[:2] == ["dumpsys", "device_policy"] else orig_shell(a)
+        with self.assertRaises(AdbError):
+            self.apply(path, doc)
+        self.assertTrue(self.dev.packages["com.facebook.katana"]["enabled"])
+
+    def test_dropped_connection_mid_group_rolls_back(self):
+        names = ["com.facebook.katana", "com.facebook.appmanager", "com.facebook.system"]
+        for p in names:
+            self.dev.add_package(p)
+        path, doc = self.plan(self.pkgs(*names))
+        orig = self.dev._pm
+        state = {"n": 0}
+
+        def flaky(a):
+            if a[1] == "disable-user":
+                state["n"] += 1
+                if state["n"] == 2:
+                    from unbloat.adb import DeviceOffline
+                    raise DeviceOffline("dropped", "")
+            return orig(a)
+
+        self.dev._pm = flaky
+        from unbloat.adb import AdbError
+        with self.assertRaises(AdbError):
+            self.apply(path, doc)
+        self.assertTrue(all(self.dev.packages[p]["enabled"] for p in names))
+
     def test_bad_copy_means_no_delete(self):
         a, b = ROOT + "/Download/a.bin", ROOT + "/Download/b.bin"
         self.dev.add_file(a, b"A" * 100)
